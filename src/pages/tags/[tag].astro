@@ -1,0 +1,117 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+
+export async function getStaticPaths() {
+  const protocols = await getCollection('protocols', ({ data }) => !data.draft);
+  const tagSet = new Set(protocols.flatMap(p => p.data.tags));
+
+  return Array.from(tagSet).map(tag => ({
+    params: { tag },
+    props: {
+      tag,
+      protocols: protocols.filter(p => p.data.tags.includes(tag)),
+    },
+  }));
+}
+
+const { tag, protocols } = Astro.props;
+const sorted = [...protocols].sort((a: any, b: any) =>
+  new Date(b.data.updated).getTime() - new Date(a.data.updated).getTime()
+);
+
+const evidenceLabels: Record<string, string> = {
+  'strong': '4/4',
+  'moderate': '3/4',
+  'preliminary': '2/4',
+  'expert-opinion': '1/4',
+};
+
+const relatedTagFreq: Record<string, number> = {};
+for (const p of protocols) {
+  for (const t of p.data.tags) {
+    if (t !== tag) relatedTagFreq[t] = (relatedTagFreq[t] ?? 0) + 1;
+  }
+}
+const relatedTags = Object.entries(relatedTagFreq)
+  .sort((a, b) => b[1] - a[1])
+  .slice(0, 6)
+  .map(([t]) => t);
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": `#${tag} — CiteThis`,
+  "description": `Evidence-based protocols tagged with #${tag}`,
+  "url": `https://citethis.site/tags/${tag}`,
+};
+---
+
+<Base
+  title={`#${tag}`}
+  description={`Evidence-based protocols tagged with #${tag}. ${sorted.length} protocol${sorted.length !== 1 ? 's' : ''} available.`}
+  schema={schema}
+>
+  <div style="margin-bottom: 2.5rem;">
+    <p style="font-family: monospace; font-size: 0.75rem; margin-bottom: 0.5rem; color: var(--text-muted);">
+      <a href="/" style="color: var(--text-muted); text-decoration: none;">CiteThis</a> / tags
+    </p>
+    <h1 style="font-size: 2.5rem; font-weight: 900; letter-spacing: -0.025em; margin-bottom: 0.5rem; color: var(--text);">
+      #{tag}
+    </h1>
+    <p style="font-size: 0.875rem; color: var(--text-muted);">
+      {sorted.length} protocol{sorted.length !== 1 ? 's' : ''}
+    </p>
+  </div>
+
+  <div style="border-top: 1px solid var(--border); margin-bottom: 3rem;">
+    {sorted.map((protocol: any) => {
+      const slug = protocol.id.replace(/\.md$/, '');
+      return (
+        <article style="padding: 1.5rem 0; border-bottom: 1px solid var(--border);">
+          <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.5rem;">
+            {protocol.data.tags.filter((t: string) => t !== tag).map((t: string) => (
+              <a
+                href={`/tags/${t}`}
+                style="text-decoration: none; font-family: monospace; font-size: 0.75rem; color: var(--text-muted);"
+              >
+                #{t}
+              </a>
+            ))}
+          </div>
+          <h2 style="font-size: 1.25rem; font-weight: 900; margin-bottom: 0.5rem; line-height: 1.3;">
+            <a href={`/${slug}`} style="text-decoration: none; color: var(--text);">
+              {protocol.data.title}
+            </a>
+          </h2>
+          <p style="font-size: 0.875rem; line-height: 1.6; margin-bottom: 0.75rem; color: var(--text-muted); overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;">
+            {protocol.data.tldr}
+          </p>
+          <div style="display: flex; flex-wrap: wrap; gap: 1rem; font-size: 0.75rem; font-family: monospace; color: var(--text-muted);">
+            <span>{protocol.data.sources} sources</span>
+            <span>{evidenceLabels[protocol.data.evidence]} {protocol.data.evidence.replace('-', ' ')}</span>
+            <span>Updated {protocol.data.updated}</span>
+          </div>
+        </article>
+      );
+    })}
+  </div>
+
+  {relatedTags.length > 0 && (
+    <div style="border-top: 1px solid var(--border); padding-top: 2rem;">
+      <h2 style="font-family: monospace; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 1rem; color: var(--text-muted);">
+        Related Topics
+      </h2>
+      <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+        {relatedTags.map(t => (
+          <a
+            href={`/tags/${t}`}
+            style="text-decoration: none; font-family: monospace; font-size: 0.875rem; padding: 0.25rem 0.75rem; border: 1px solid var(--border); border-radius: 0.25rem; color: var(--text-muted);"
+          >
+            #{t}
+          </a>
+        ))}
+      </div>
+    </div>
+  )}
+</Base>

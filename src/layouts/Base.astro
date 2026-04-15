@@ -1,0 +1,140 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+  ogType?: string;
+  canonical?: string;
+  schema?: object;
+}
+
+const {
+  title,
+  description = 'Evidence-based research syntheses with actionable protocols.',
+  ogType = 'website',
+  canonical,
+  schema,
+} = Astro.props;
+
+const fullTitle = title === 'CiteThis' ? 'CiteThis' : `${title} | CiteThis`;
+const canonicalURL = canonical ?? new URL(Astro.url.pathname, Astro.site).toString();
+---
+
+<!doctype html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="generator" content={Astro.generator} />
+
+  <title>{fullTitle}</title>
+  <meta name="description" content={description} />
+  <meta name="author" content="Jakub Roh" />
+  <link rel="canonical" href={canonicalURL} />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content={fullTitle} />
+  <meta property="og:description" content={description} />
+  <meta property="og:type" content={ogType} />
+  <meta property="og:url" content={canonicalURL} />
+  <meta property="og:site_name" content="CiteThis" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content={fullTitle} />
+  <meta name="twitter:description" content={description} />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+  <!-- Schema.org -->
+  {schema && (
+    <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+  )}
+
+  <!-- Site-level schema -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "CiteThis",
+      "url": "https://citethis.site",
+      "description": "Evidence-based research syntheses with actionable protocols.",
+      "author": {
+        "@type": "Person",
+        "name": "Jakub Roh",
+        "url": "https://jroh.cz",
+        "sameAs": ["https://linkedin.com/in/jakubroh"]
+      }
+    }
+  </script>
+
+  <!-- Dark mode script (prevents flash) -->
+  <script is:inline>
+    const theme = localStorage.getItem('theme') ?? 'dark';
+    document.documentElement.classList.toggle('dark', theme === 'dark');
+    document.documentElement.classList.toggle('light', theme === 'light');
+  </script>
+</head>
+<body style="background-color: var(--background); color: var(--text);">
+
+  <!-- Header -->
+  <header class="border-b" style="border-color: var(--border);">
+    <div class="max-w-4xl mx-auto px-4 py-4 flex items-center justify-between">
+      <a href="/" class="no-underline font-black text-xl tracking-tight hover:opacity-70" style="color: var(--text);">
+        CiteThis
+      </a>
+      <nav class="flex items-center gap-6 text-sm">
+        <a href="/about" class="no-underline" style="color: var(--text-muted);">About</a>
+        <a href="/methodology" class="no-underline" style="color: var(--text-muted);">Methodology</a>
+        <button
+          id="theme-toggle"
+          aria-label="Toggle dark/light mode"
+          class="text-xs px-2 py-1 border rounded font-mono"
+          style="border-color: var(--border); color: var(--text-muted);"
+        >
+          <span class="dark:hidden">DARK</span>
+          <span class="hidden dark:inline">LIGHT</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main content -->
+  <main class="max-w-4xl mx-auto px-4 py-8">
+    <slot />
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t mt-16" style="border-color: var(--border);">
+    <div class="max-w-4xl mx-auto px-4 py-6 text-sm flex flex-wrap gap-4 items-center justify-between" style="color: var(--text-muted);">
+      <div class="flex gap-4">
+        <a href="/about" class="no-underline hover:opacity-70" style="color: var(--text-muted);">About</a>
+        <a href="/methodology" class="no-underline hover:opacity-70" style="color: var(--text-muted);">Methodology</a>
+        <a href="/llms.txt" class="no-underline hover:opacity-70 font-mono" style="color: var(--text-muted);">llms.txt</a>
+      </div>
+      <div>
+        A project by <a href="https://jroh.cz" class="no-underline hover:opacity-70" style="color: var(--text-muted);">Jakub Roh</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Theme toggle script -->
+  <script>
+    const btn = document.getElementById('theme-toggle');
+    btn?.addEventListener('click', () => {
+      const isDark = document.documentElement.classList.contains('dark');
+      document.documentElement.classList.toggle('dark', !isDark);
+      document.documentElement.classList.toggle('light', isDark);
+      localStorage.setItem('theme', isDark ? 'light' : 'dark');
+    });
+  </script>
+
+</body>
+</html>

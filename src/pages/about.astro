@@ -1,0 +1,78 @@
+---
+import Base from '../layouts/Base.astro';
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "CiteThis",
+  "url": "https://citethis.site",
+  "founder": {
+    "@type": "Person",
+    "name": "Jakub Roh",
+    "url": "https://jroh.cz",
+    "sameAs": [
+      "https://linkedin.com/in/jakubroh"
+    ],
+    "jobTitle": "Researcher",
+    "knowsAbout": ["Evidence synthesis", "Health optimization", "AI", "Education"]
+  },
+  "description": "Evidence-based research syntheses with actionable protocols"
+};
+---
+
+<Base
+  title="About"
+  description="CiteThis is evidence-based research syntheses that don't exist elsewhere. Learn about our methodology and the researcher behind it."
+  schema={schema}
+>
+  <div class="max-w-2xl">
+    <p class="text-xs font-mono mb-4" style="color: var(--text-muted);">
+      <a href="/" class="no-underline hover:opacity-70" style="color: var(--text-muted);">CiteThis</a> / about
+    </p>
+
+    <h1 class="text-4xl font-black tracking-tight mb-8" style="color: var(--text);">About CiteThis</h1>
+
+    <p class="text-lg leading-relaxed mb-6" style="color: var(--text);">
+      Evidence-based research syntheses that don't exist elsewhere.
+    </p>
+
+    <h2 class="text-lg font-black mb-3 mt-8" style="color: var(--text);">What we do</h2>
+    <p class="leading-relaxed mb-4" style="color: var(--text);">
+      We take complex scientific literature and synthesize it into actionable protocols. Not summaries — protocols. Specific doses, timing, interactions, safety considerations, with full citations to primary sources.
+    </p>
+
+    <h2 class="text-lg font-black mb-3 mt-8" style="color: var(--text);">Why this exists</h2>
+    <p class="leading-relaxed mb-2" style="color: var(--text);">Most health information online is either:</p>
+    <ul class="space-y-2 mb-4 pl-4" style="color: var(--text);">
+      <li class="flex gap-2"><span style="color: var(--text-muted);">—</span> <span>Too shallow (<em>Healthline:</em> "consider taking vitamin D")</span></li>
+      <li class="flex gap-2"><span style="color: var(--text-muted);">—</span> <span>Too academic (<em>Cochrane:</em> unreadable for non-researchers)</span></li>
+      <li class="flex gap-2"><span style="color: var(--text-muted);">—</span> <span>Too fragmented (<em>Examine.com:</em> individual compounds, no combinations)</span></li>
+    </ul>
+    <p class="leading-relaxed mb-4" style="color: var(--text);">
+      We fill the gap: Cochrane-depth research, translated into "do this" protocols.
+    </p>
+
+    <h2 class="text-lg font-black mb-3 mt-8" style="color: var(--text);">Who</h2>
+    <p class="leading-relaxed mb-4" style="color: var(--text);">
+      <strong>Jakub Roh</strong> — researcher, evidence synthesizer. Based in Czech Republic.
+    </p>
+    <p class="leading-relaxed mb-4" style="color: var(--text);">
+      Other projects: <a href="https://jroh.cz" class="font-mono">jroh.cz</a> (Tech Meets Human), <a href="https://nezzazvoni.cz" class="font-mono">Než zazvoní</a> (educational consulting for schools).
+    </p>
+
+    <h2 class="text-lg font-black mb-3 mt-8" style="color: var(--text);">Methodology</h2>
+    <p class="leading-relaxed mb-4" style="color: var(--text);">
+      Every protocol follows a systematic review process: literature search, source quality evaluation, evidence synthesis, safety review, and continuous updates.
+    </p>
+    <a href="/methodology" class="font-bold no-underline hover:opacity-70" style="color: var(--text);">
+      Full methodology →
+    </a>
+
+    <h2 class="text-lg font-black mb-3 mt-8" style="color: var(--text);">Conflicts of Interest</h2>
+    <ul class="space-y-2 pl-4" style="color: var(--text);">
+      <li class="flex gap-2"><span style="color: var(--text-muted);">—</span> No funding from supplement or pharma companies</li>
+      <li class="flex gap-2"><span style="color: var(--text-muted);">—</span> Affiliate links disclosed when present</li>
+      <li class="flex gap-2"><span style="color: var(--text-muted);">—</span> No sponsored content</li>
+    </ul>
+  </div>
+</Base>

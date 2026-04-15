@@ -1,0 +1,34 @@
+---
+import { getCollection, render } from 'astro:content';
+import Article from '../layouts/Article.astro';
+
+export async function getStaticPaths() {
+  const protocols = await getCollection('protocols', ({ data }) => !data.draft);
+  return protocols.map(p => {
+    const slug = p.id.replace(/\.md$/, '');
+    return {
+      params: { slug },
+      props: { protocol: p, slug },
+    };
+  });
+}
+
+const { protocol, slug } = Astro.props;
+const { Content } = await render(protocol);
+const { title, tldr, tags, evidence, sources, created, updated, verified, author } = protocol.data;
+---
+
+<Article
+  title={title}
+  tldr={tldr}
+  tags={tags}
+  evidence={evidence}
+  sources={sources}
+  created={created}
+  updated={updated}
+  verified={verified}
+  author={author}
+  slug={slug}
+>
+  <Content />
+</Article>

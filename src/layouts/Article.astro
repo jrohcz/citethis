@@ -1,0 +1,120 @@
+---
+import Base from './Base.astro';
+
+interface Props {
+  title: string;
+  tldr: string;
+  tags: string[];
+  evidence: string;
+  sources: number;
+  created: string;
+  updated: string;
+  verified: string;
+  author: string;
+  slug: string;
+}
+
+const { title, tldr, tags, evidence, sources, created, updated, verified, author, slug } = Astro.props;
+
+const evidenceLabels: Record<string, { label: string; score: string }> = {
+  'strong': { label: 'Strong Evidence', score: '4/4' },
+  'moderate': { label: 'Moderate Evidence', score: '3/4' },
+  'preliminary': { label: 'Preliminary Evidence', score: '2/4' },
+  'expert-opinion': { label: 'Expert Opinion', score: '1/4' },
+};
+
+const ev = evidenceLabels[evidence] ?? evidenceLabels['moderate'];
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": title,
+  "description": tldr,
+  "author": {
+    "@type": "Person",
+    "name": author,
+    "url": "https://jroh.cz",
+    "sameAs": ["https://linkedin.com/in/jakubroh"]
+  },
+  "datePublished": created,
+  "dateModified": updated,
+  "dateCreated": created,
+  "keywords": tags,
+  "publisher": {
+    "@type": "Organization",
+    "name": "CiteThis",
+    "url": "https://citethis.site"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": `https://citethis.site/${slug}`
+  }
+};
+---
+
+<Base title={title} description={tldr} ogType="article" schema={schema}>
+  <!-- Article header -->
+  <div class="mb-8 pb-8 border-b" style="border-color: var(--border);">
+    <!-- Tags -->
+    <div class="flex flex-wrap gap-2 mb-4">
+      {tags.map(tag => (
+        <a
+          href={`/tags/${tag}`}
+          class="no-underline text-xs font-mono px-2 py-0.5 rounded"
+          style="background-color: var(--tag-bg); color: var(--text-muted);"
+        >
+          #{tag}
+        </a>
+      ))}
+    </div>
+
+    <!-- Title -->
+    <h1 class="text-3xl md:text-4xl font-black tracking-tight leading-tight mb-4" style="color: var(--text);">
+      {title}
+    </h1>
+
+    <!-- Meta row -->
+    <div class="flex flex-wrap gap-4 items-center text-sm" style="color: var(--text-muted);">
+      <span>By <strong style="color: var(--text);">{author}</strong></span>
+      <span class="font-mono">{sources} sources</span>
+      <span
+        class="font-mono text-xs px-2 py-0.5 border rounded"
+        style="border-color: var(--border);"
+        title={ev.label}
+      >
+        {ev.score} {ev.label}
+      </span>
+      <span>Updated {updated}</span>
+    </div>
+  </div>
+
+  <!-- TL;DR box -->
+  <div class="p-4 mb-8 border-l-4" style="border-color: var(--accent); background-color: var(--tag-bg);">
+    <div class="text-xs font-mono font-bold mb-2 uppercase tracking-widest" style="color: var(--text-muted);">TL;DR</div>
+    <p class="leading-relaxed" style="color: var(--text);">{tldr}</p>
+  </div>
+
+  <!-- Article content -->
+  <article class="prose max-w-none">
+    <slot />
+  </article>
+
+  <!-- Article footer -->
+  <div class="mt-12 pt-8 border-t text-sm" style="border-color: var(--border); color: var(--text-muted);">
+    <div class="flex flex-wrap gap-6 mb-4">
+      <div><span class="font-bold" style="color: var(--text);">Published:</span> {created}</div>
+      <div><span class="font-bold" style="color: var(--text);">Updated:</span> {updated}</div>
+      <div><span class="font-bold" style="color: var(--text);">Verified:</span> {verified}</div>
+    </div>
+    <div class="flex flex-wrap gap-4 items-center">
+      <span>By <a href="/about" class="no-underline hover:opacity-70" style="color: var(--text-muted);">{author}</a></span>
+      <span>·</span>
+      <a href="/methodology" class="no-underline hover:opacity-70" style="color: var(--text-muted);">Methodology</a>
+      <span>·</span>
+      <a href={`/${slug}.md`} class="no-underline font-mono text-xs hover:opacity-70" style="color: var(--text-muted);">raw .md</a>
+    </div>
+    <p class="mt-4 text-xs italic" style="color: var(--text-muted);">
+      This is not medical advice. Consult your healthcare provider before making any changes.
+    </p>
+  </div>
+</Base>

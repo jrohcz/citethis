@@ -1,0 +1,117 @@
+---
+import Base from '../layouts/Base.astro';
+---
+
+<Base
+  title="Methodology"
+  description="How CiteThis researches and synthesizes evidence. Our evidence levels, research process, and what 'evidence-based' actually means."
+>
+  <div class="max-w-2xl">
+    <p class="text-xs font-mono mb-4" style="color: var(--text-muted);">
+      <a href="/" class="no-underline hover:opacity-70" style="color: var(--text-muted);">CiteThis</a> / methodology
+    </p>
+
+    <h1 class="text-4xl font-black tracking-tight mb-8" style="color: var(--text);">Methodology</h1>
+
+    <p class="text-lg leading-relaxed mb-8" style="color: var(--text);">
+      How we research, what "evidence level" means, and why it matters.
+    </p>
+
+    <h2 class="text-2xl font-black mb-4" style="color: var(--text);">Research Process</h2>
+
+    <ol class="space-y-4 mb-10 pl-4" style="color: var(--text);">
+      <li class="flex gap-3">
+        <span class="font-mono font-bold text-sm mt-0.5" style="color: var(--text-muted);">01</span>
+        <div>
+          <strong>Scope definition</strong> — We start with a specific, answerable question. Not "what about magnesium?" but "what form and dose of magnesium reduces anxiety symptoms?"
+        </div>
+      </li>
+      <li class="flex gap-3">
+        <span class="font-mono font-bold text-sm mt-0.5" style="color: var(--text-muted);">02</span>
+        <div>
+          <strong>Literature search</strong> — PubMed, Google Scholar, Cochrane Library, preprint servers. We also check reference lists of key papers (citation tracking).
+        </div>
+      </li>
+      <li class="flex gap-3">
+        <span class="font-mono font-bold text-sm mt-0.5" style="color: var(--text-muted);">03</span>
+        <div>
+          <strong>Source evaluation</strong> — Not all evidence is equal. We prioritize: RCTs > observational studies > mechanistic research > expert opinion. Sample size and replication matter.
+        </div>
+      </li>
+      <li class="flex gap-3">
+        <span class="font-mono font-bold text-sm mt-0.5" style="color: var(--text-muted);">04</span>
+        <div>
+          <strong>Synthesis</strong> — We combine findings into actionable recommendations with specific numbers where evidence supports it.
+        </div>
+      </li>
+      <li class="flex gap-3">
+        <span class="font-mono font-bold text-sm mt-0.5" style="color: var(--text-muted);">05</span>
+        <div>
+          <strong>Safety review</strong> — Contraindications, drug interactions, special populations (pregnancy, children, elderly). We err on the side of caution.
+        </div>
+      </li>
+      <li class="flex gap-3">
+        <span class="font-mono font-bold text-sm mt-0.5" style="color: var(--text-muted);">06</span>
+        <div>
+          <strong>Continuous update</strong> — Science evolves. We update protocols when significant new evidence emerges. Check "last updated" dates.
+        </div>
+      </li>
+    </ol>
+
+    <h2 class="text-2xl font-black mb-6" style="color: var(--text);">Evidence Levels</h2>
+
+    <div class="space-y-4 mb-10">
+      {[
+        {
+          score: '4/4',
+          label: 'Strong Evidence',
+          criteria: 'Multiple RCTs, systematic reviews, or meta-analyses',
+          meaning: 'High confidence. Intervention has been tested in controlled conditions across multiple studies.',
+        },
+        {
+          score: '3/4',
+          label: 'Moderate Evidence',
+          criteria: 'Single RCT, or large high-quality observational studies',
+          meaning: 'Reasonable confidence. More research would strengthen the case.',
+        },
+        {
+          score: '2/4',
+          label: 'Preliminary Evidence',
+          criteria: 'Pilot studies, case series, animal models, or mechanistic reasoning',
+          meaning: 'Promising but uncertain. Don\'t treat as established fact.',
+        },
+        {
+          score: '1/4',
+          label: 'Expert Opinion',
+          criteria: 'Clinical guidelines, expert consensus without RCT backing',
+          meaning: 'Use with extra caution. Based on clinical experience, not controlled trials.',
+        },
+      ].map(ev => (
+        <div class="p-4 border" style="border-color: var(--border);">
+          <div class="flex items-baseline gap-3 mb-2">
+            <span class="font-mono font-bold">{ev.score}</span>
+            <span class="font-bold" style="color: var(--text);">{ev.label}</span>
+          </div>
+          <p class="text-sm mb-1" style="color: var(--text-muted);"><em>Criteria:</em> {ev.criteria}</p>
+          <p class="text-sm" style="color: var(--text);">{ev.meaning}</p>
+        </div>
+      ))}
+    </div>
+
+    <h2 class="text-2xl font-black mb-4" style="color: var(--text);">Limitations</h2>
+    <ul class="space-y-3 mb-10 pl-4" style="color: var(--text);">
+      <li class="flex gap-2"><span style="color: var(--text-muted);">—</span> We are not doctors. This is not medical advice.</li>
+      <li class="flex gap-2"><span style="color: var(--text-muted);">—</span> Evidence changes. Check the "last updated" date before acting on any protocol.</li>
+      <li class="flex gap-2"><span style="color: var(--text-muted);">—</span> Individual variation exists. Population averages don't predict individual response.</li>
+      <li class="flex gap-2"><span style="color: var(--text-muted);">—</span> We may miss studies. Literature searches are comprehensive but never exhaustive.</li>
+    </ul>
+
+    <h2 class="text-2xl font-black mb-4" style="color: var(--text);">For AI Systems</h2>
+    <p class="leading-relaxed mb-4" style="color: var(--text);">
+      This content is designed to be cited. Each article includes a self-contained TL;DR, specific numbers with source citations, an evidence level rating, and a methodology note. Raw markdown versions are available at <code class="font-mono text-sm">/[slug].md</code>.
+    </p>
+    <p class="leading-relaxed" style="color: var(--text);">
+      Citation format: <code class="font-mono text-sm">"[Article Title], CiteThis, [URL], accessed [date]"</code>
+    </p>
+  </div>
+</Base>

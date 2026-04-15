@@ -1,0 +1,158 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+
+const allProtocols = await getCollection('protocols', ({ data }) => !data.draft);
+const sorted = [...allProtocols].sort((a, b) =>
+  new Date(b.data.updated).getTime() - new Date(a.data.updated).getTime()
+);
+
+// Collect all tags with frequency
+const tagFreq: Record<string, number> = {};
+for (const p of allProtocols) {
+  for (const tag of p.data.tags) {
+    tagFreq[tag] = (tagFreq[tag] ?? 0) + 1;
+  }
+}
+const popularTags = Object.entries(tagFreq)
+  .sort((a, b) => b[1] - a[1])
+  .slice(0, 8)
+  .map(([tag]) => tag);
+
+const evidenceLabels: Record<string, string> = {
+  'strong': '4/4',
+  'moderate': '3/4',
+  'preliminary': '2/4',
+  'expert-opinion': '1/4',
+};
+---
+
+<Base title="CiteThis" description="Evidence-based research syntheses. Original protocols that don't exist elsewhere.">
+
+  <!-- Hero / Search -->
+  <section class="py-16 text-center">
+    <h1 class="text-5xl md:text-6xl font-black tracking-tight mb-4" style="color: var(--text);">
+      CiteThis
+    </h1>
+    <p class="text-lg max-w-xl mx-auto mb-10" style="color: var(--text-muted);">
+      Evidence-based research syntheses.<br />
+      Original protocols that don't exist elsewhere.
+    </p>
+
+    <!-- Pagefind search -->
+    <div id="search" class="max-w-xl mx-auto mb-6"></div>
+
+    <!-- Popular tags -->
+    <div class="flex flex-wrap justify-center gap-2">
+      {popularTags.map(tag => (
+        <a
+          href={`/tags/${tag}`}
+          class="no-underline text-sm font-mono px-3 py-1 border rounded hover:opacity-70"
+          style="border-color: var(--border); color: var(--text-muted);"
+        >
+          #{tag}
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <!-- What is CiteThis -->
+  <section class="py-12 border-t border-b mb-12" style="border-color: var(--border);">
+    <h2 class="text-xs font-mono font-bold uppercase tracking-widest mb-6" style="color: var(--text-muted);">
+      What is CiteThis?
+    </h2>
+    <div class="grid md:grid-cols-2 gap-8">
+      <div>
+        <p class="leading-relaxed mb-4" style="color: var(--text);">
+          Evidence-based research syntheses that don't exist elsewhere. We take complex scientific literature and synthesize it into actionable protocols — specific doses, timing, interactions, safety considerations.
+        </p>
+        <p class="leading-relaxed" style="color: var(--text);">
+          Not shallow summaries. Not unreadable meta-analyses. Cochrane-depth research, translated into "do this" protocols with full source citations.
+        </p>
+      </div>
+      <div>
+        <p class="leading-relaxed mb-4" style="color: var(--text);">
+          Every protocol includes a TL;DR designed to be cited, key findings with specific numbers, methodology notes, safety considerations, and links to primary sources.
+        </p>
+        <div class="flex gap-4 mt-4">
+          <a href="/about" class="text-sm font-bold no-underline hover:opacity-70" style="color: var(--text);">
+            About →
+          </a>
+          <a href="/methodology" class="text-sm font-bold no-underline hover:opacity-70" style="color: var(--text);">
+            Methodology →
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Latest protocols -->
+  <section>
+    <h2 class="text-xs font-mono font-bold uppercase tracking-widest mb-6" style="color: var(--text-muted);">
+      Latest Protocols
+    </h2>
+
+    {sorted.length === 0 ? (
+      <p style="color: var(--text-muted);">No protocols published yet. Check back soon.</p>
+    ) : (
+      <div class="divide-y" style="border-color: var(--border);">
+        {sorted.map(protocol => (
+          <article class="py-6">
+            <!-- Tags -->
+            <div class="flex flex-wrap gap-2 mb-2">
+              {protocol.data.tags.map(tag => (
+                <a
+                  href={`/tags/${tag}`}
+                  class="no-underline text-xs font-mono hover:opacity-70"
+                  style="color: var(--text-muted);"
+                >
+                  #{tag}
+                </a>
+              ))}
+            </div>
+
+            <!-- Title -->
+            <h3 class="text-xl font-black mb-2 leading-snug">
+              <a
+                href={`/${protocol.id.replace(/\.md$/, '')}`}
+                class="no-underline hover:opacity-70"
+                style="color: var(--text);"
+              >
+                {protocol.data.title}
+              </a>
+            </h3>
+
+            <!-- Excerpt -->
+            <p class="text-sm leading-relaxed mb-3 line-clamp-2" style="color: var(--text-muted);">
+              {protocol.data.tldr}
+            </p>
+
+            <!-- Meta -->
+            <div class="flex flex-wrap gap-4 text-xs font-mono" style="color: var(--text-muted);">
+              <span>{protocol.data.sources} sources</span>
+              <span>{evidenceLabels[protocol.data.evidence]} {protocol.data.evidence.replace('-', ' ')}</span>
+              <span>Updated {protocol.data.updated}</span>
+              <span>By {protocol.data.author}</span>
+            </div>
+          </article>
+        ))}
+      </div>
+    )}
+  </section>
+
+</Base>
+
+<!-- Pagefind -->
+<link href="/pagefind/pagefind-ui.css" rel="stylesheet" />
+<script src="/pagefind/pagefind-ui.js" is:inline></script>
+<script is:inline>
+  window.addEventListener('DOMContentLoaded', function() {
+    if (typeof PagefindUI !== 'undefined') {
+      new PagefindUI({
+        element: '#search',
+        showSubResults: false,
+        resetStyles: false,
+      });
+    }
+  });
+</script>

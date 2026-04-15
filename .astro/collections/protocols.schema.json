@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "evidence": {
+      "type": "string",
+      "enum": [
+        "strong",
+        "moderate",
+        "preliminary",
+        "expert-opinion"
+      ]
+    },
+    "sources": {
+      "type": "number"
+    },
+    "created": {
+      "type": "string"
+    },
+    "updated": {
+      "type": "string"
+    },
+    "verified": {
+      "type": "string"
+    },
+    "author": {
+      "default": "Jakub Roh",
+      "type": "string"
+    },
+    "tldr": {
+      "type": "string"
+    },
+    "draft": {
+      "default": false,
+      "type": "boolean"
+    },
+    "$schema": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "title",
+    "tags",
+    "evidence",
+    "sources",
+    "created",
+    "updated",
+    "verified",
+    "tldr"
+  ]
+}
