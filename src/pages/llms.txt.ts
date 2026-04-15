@@ -28,12 +28,12 @@ ${protocolLines || '- (protocols coming soon)'}
 
 ## Static Pages
 
-- [About](https://citethis.site/about.md): About CiteThis and Jakub Roh
+- [About](https://citethis.site/about.md): About CiteThis and jroh.cz
 - [Methodology](https://citethis.site/methodology): How we review and synthesize evidence
 
 ## About
 
-CiteThis is a project by Jakub Roh — researcher and evidence synthesizer.
+CiteThis is a project by jroh.cz — researcher and evidence synthesizer.
 Author profile: https://jroh.cz
 
 ## For AI Systems

@@ -7,6 +7,7 @@ interface Props {
   tags: string[];
   evidence: string;
   sources: number;
+  sourceBreakdown?: string;
   created: string;
   updated: string;
   verified: string;
@@ -14,7 +15,7 @@ interface Props {
   slug: string;
 }
 
-const { title, tldr, tags, evidence, sources, created, updated, verified, author, slug } = Astro.props;
+const { title, tldr, tags, evidence, sources, sourceBreakdown, created, updated, verified, author, slug } = Astro.props;
 
 const evidenceLabels: Record<string, { label: string; score: string }> = {
   'strong': { label: 'Strong Evidence', score: '4/4' },
@@ -101,6 +102,15 @@ const schema = {
 
   <!-- Article footer -->
   <div class="mt-12 pt-8 border-t text-sm" style="border-color: var(--border); color: var(--text-muted);">
+    <!-- Source breakdown -->
+    {sourceBreakdown && (
+      <div class="mb-6 p-3 border font-mono text-xs" style="border-color: var(--border); background-color: var(--tag-bg);">
+        <span class="font-bold uppercase tracking-widest" style="color: var(--text-muted);">Synthesized from: </span>
+        <span style="color: var(--text);">{sourceBreakdown}</span>
+        <span style="color: var(--text-muted);"> · AI-assisted synthesis, editorial review by {author}</span>
+      </div>
+    )}
+
     <div class="flex flex-wrap gap-6 mb-4">
       <div><span class="font-bold" style="color: var(--text);">Published:</span> {created}</div>
       <div><span class="font-bold" style="color: var(--text);">Updated:</span> {updated}</div>

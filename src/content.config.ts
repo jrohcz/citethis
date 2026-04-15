@@ -8,10 +8,12 @@ const protocols = defineCollection({
     tags: z.array(z.string()),
     evidence: z.enum(['strong', 'moderate', 'preliminary', 'expert-opinion']),
     sources: z.number(),
+    // Optional source breakdown: "3 meta-analyses, 8 RCTs, 12 observational, 24 supporting"
+    sourceBreakdown: z.string().optional(),
     created: z.string(),
     updated: z.string(),
     verified: z.string(),
-    author: z.string().default('Jakub Roh'),
+    author: z.string().default('jroh.cz'),
     tldr: z.string(),
     draft: z.boolean().default(false),
   }),

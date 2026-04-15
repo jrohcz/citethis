@@ -23,6 +23,9 @@
     "sources": {
       "type": "number"
     },
+    "sourceBreakdown": {
+      "type": "string"
+    },
     "created": {
       "type": "string"
     },
@@ -33,7 +36,7 @@
       "type": "string"
     },
     "author": {
-      "default": "Jakub Roh",
+      "default": "jroh.cz",
       "type": "string"
     },
     "tldr": {
