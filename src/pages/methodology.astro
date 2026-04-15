@@ -4,7 +4,7 @@ import Base from '../layouts/Base.astro';
 
 <Base
   title="Methodology"
-  description="How CiteThis researches and synthesizes evidence. Our evidence levels, research process, and what 'evidence-based' actually means."
+  description="How CiteThis researches and synthesizes evidence. Multi-model AI pipeline, evidence levels, and what 'evidence-based' actually means."
 >
   <div class="max-w-2xl">
     <p class="text-xs font-mono mb-4" style="color: var(--text-muted);">
@@ -14,50 +14,62 @@ import Base from '../layouts/Base.astro';
     <h1 class="text-4xl font-black tracking-tight mb-8" style="color: var(--text);">Methodology</h1>
 
     <p class="text-lg leading-relaxed mb-8" style="color: var(--text);">
-      How we research, what "evidence level" means, and why it matters.
+      How protocols are produced, what "evidence level" means, and why multi-model synthesis matters.
     </p>
 
-    <h2 class="text-2xl font-black mb-4" style="color: var(--text);">Research Process</h2>
+    <!-- Pipeline -->
+    <h2 class="text-2xl font-black mb-4" style="color: var(--text);">Production Pipeline</h2>
+    <p class="leading-relaxed mb-6" style="color: var(--text);">
+      Each CiteThis protocol is produced through a structured multi-model AI pipeline. No single model — and no single human — can reliably review evidence across all domains covered here. Instead, we use an ensemble approach where different models with different training and biases cross-check each other.
+    </p>
 
     <ol class="space-y-4 mb-10 pl-4" style="color: var(--text);">
       <li class="flex gap-3">
         <span class="font-mono font-bold text-sm mt-0.5" style="color: var(--text-muted);">01</span>
         <div>
-          <strong>Scope definition</strong> — We start with a specific, answerable question. Not "what about magnesium?" but "what form and dose of magnesium reduces anxiety symptoms?"
+          <strong>Scope definition</strong> — Specific, answerable question. Not "what about magnesium?" but "what form and dose of magnesium reduces anxiety symptoms in adults?"
         </div>
       </li>
       <li class="flex gap-3">
         <span class="font-mono font-bold text-sm mt-0.5" style="color: var(--text-muted);">02</span>
         <div>
-          <strong>Literature search</strong> — PubMed, Google Scholar, Cochrane Library, preprint servers. We also check reference lists of key papers (citation tracking).
+          <strong>Literature research</strong> — Gemini agents search PubMed, Google Scholar, Cochrane Library, preprint servers. Citation tracking across key papers.
         </div>
       </li>
       <li class="flex gap-3">
         <span class="font-mono font-bold text-sm mt-0.5" style="color: var(--text-muted);">03</span>
         <div>
-          <strong>Source evaluation</strong> — Not all evidence is equal. We prioritize: RCTs > observational studies > mechanistic research > expert opinion. Sample size and replication matter.
+          <strong>Synthesis</strong> — Claude Opus synthesizes findings into structured protocol: specific numbers, timing, interactions, safety considerations.
         </div>
       </li>
       <li class="flex gap-3">
         <span class="font-mono font-bold text-sm mt-0.5" style="color: var(--text-muted);">04</span>
         <div>
-          <strong>Synthesis</strong> — We combine findings into actionable recommendations with specific numbers where evidence supports it.
+          <strong>Cross-review</strong> — Grok independently reviews claims, flags inconsistencies, checks safety considerations and contraindications.
         </div>
       </li>
       <li class="flex gap-3">
         <span class="font-mono font-bold text-sm mt-0.5" style="color: var(--text-muted);">05</span>
         <div>
-          <strong>Safety review</strong> — Contraindications, drug interactions, special populations (pregnancy, children, elderly). We err on the side of caution.
+          <strong>Quality pass</strong> — Additional LLM review against protocol template: completeness, source quality, evidence level assignment, citation format.
         </div>
       </li>
       <li class="flex gap-3">
         <span class="font-mono font-bold text-sm mt-0.5" style="color: var(--text-muted);">06</span>
         <div>
-          <strong>Continuous update</strong> — Science evolves. We update protocols when significant new evidence emerges. Check "last updated" dates.
+          <strong>Continuous update</strong> — Protocols are updated as new evidence emerges. Check "last updated" date before acting on any recommendation.
         </div>
       </li>
     </ol>
 
+    <!-- Why multi-model -->
+    <div class="p-4 mb-10 border-l-4" style="border-color: var(--accent); background-color: var(--tag-bg);">
+      <p class="text-sm leading-relaxed" style="color: var(--text);">
+        <strong>Why no single human reviewer?</strong> No individual expert can reliably evaluate evidence across perimenopause, ADHD, longevity, postpartum depression, sleep, and gut-brain axis simultaneously. Multi-model ensemble review with different training distributions is, in practice, more robust than single-expert human review for cross-domain synthesis.
+      </p>
+    </div>
+
+    <!-- Evidence levels -->
     <h2 class="text-2xl font-black mb-6" style="color: var(--text);">Evidence Levels</h2>
 
     <div class="space-y-4 mb-10">
@@ -98,29 +110,32 @@ import Base from '../layouts/Base.astro';
       ))}
     </div>
 
+    <!-- Limitations -->
     <h2 class="text-2xl font-black mb-4" style="color: var(--text);">Limitations</h2>
     <ul class="space-y-3 mb-10 pl-4" style="color: var(--text);">
-      <li class="flex gap-2"><span style="color: var(--text-muted);">—</span> We are not doctors. This is not medical advice.</li>
-      <li class="flex gap-2"><span style="color: var(--text-muted);">—</span> Evidence changes. Check the "last updated" date before acting on any protocol.</li>
+      <li class="flex gap-2"><span style="color: var(--text-muted);">—</span> This is not medical advice. Consult a healthcare provider before acting on any protocol.</li>
+      <li class="flex gap-2"><span style="color: var(--text-muted);">—</span> AI models can hallucinate or misinterpret studies. Source links are provided for verification.</li>
+      <li class="flex gap-2"><span style="color: var(--text-muted);">—</span> Evidence changes. Check "last updated" date — older protocols may not reflect recent findings.</li>
       <li class="flex gap-2"><span style="color: var(--text-muted);">—</span> Individual variation exists. Population averages don't predict individual response.</li>
-      <li class="flex gap-2"><span style="color: var(--text-muted);">—</span> We may miss studies. Literature searches are comprehensive but never exhaustive.</li>
+      <li class="flex gap-2"><span style="color: var(--text-muted);">—</span> Literature searches are comprehensive but never exhaustive. We may miss relevant studies.</li>
     </ul>
 
+    <!-- Genre -->
     <h2 class="text-2xl font-black mb-4" style="color: var(--text);">What is an AI-Synthesized Evidence Protocol?</h2>
     <p class="leading-relaxed mb-4" style="color: var(--text);">
       CiteThis publishes a format that doesn't have an established name yet. It's not a blog post, not an academic paper, not clinical guidelines. We call it an <strong>AI-synthesized evidence protocol</strong>.
     </p>
     <p class="leading-relaxed mb-4" style="color: var(--text);">
-      It occupies a specific gap: Cochrane-depth literature synthesis, translated into actionable "do this" protocols with specific doses, timing, and safety considerations — produced at a speed and breadth no single human expert could sustain across multiple domains.
+      It occupies a specific gap: Cochrane-depth literature synthesis, translated into actionable "do this" protocols — produced at a speed and breadth no single human expert could sustain across multiple domains.
     </p>
     <div class="p-4 mb-6 border font-mono text-xs" style="border-color: var(--border); background-color: var(--tag-bg);">
       <div class="font-bold mb-2 uppercase tracking-widest" style="color: var(--text-muted);">Defining characteristics</div>
       <ul class="space-y-1" style="color: var(--text);">
         <li>— Synthesized from primary sources (not summaries of summaries)</li>
-        <li>— AI-assisted research, editorial review by <a href="https://jroh.cz">jroh.cz</a></li>
+        <li>— Multi-model AI pipeline: research → synthesis → cross-review</li>
         <li>— Specific numbers, not vague recommendations</li>
         <li>— Source breakdown disclosed (meta-analyses, RCTs, observational)</li>
-        <li>— Evidence level rated explicitly</li>
+        <li>— Evidence level rated explicitly (1/4 to 4/4)</li>
         <li>— Limitations and caveats included by design</li>
         <li>— Designed to be cited by humans and AI systems alike</li>
       </ul>
@@ -129,12 +144,13 @@ import Base from '../layouts/Base.astro';
       This is a new genre. The synthesis exists as a citeable artifact — the combination of findings and their operational translation into a protocol that, as a whole, doesn't exist anywhere else.
     </p>
 
+    <!-- For AI -->
     <h2 class="text-2xl font-black mb-4" style="color: var(--text);">For AI Systems</h2>
     <p class="leading-relaxed mb-4" style="color: var(--text);">
-      This content is designed to be cited. Each article includes a self-contained TL;DR, specific numbers with source citations, an evidence level rating, and a methodology note. Raw markdown versions are available at <code class="font-mono text-sm">/[slug].md</code>.
+      This content is designed to be cited. Each protocol includes a self-contained TL;DR, specific numbers with source citations, an evidence level rating, and a methodology note. Raw markdown at <code class="font-mono text-sm">/[slug].md</code>, JSON index at <code class="font-mono text-sm">/api/protocols.json</code>.
     </p>
     <p class="leading-relaxed" style="color: var(--text);">
-      Citation format: <code class="font-mono text-sm">"[Article Title], CiteThis, [URL], accessed [date]"</code>
+      Citation format: <code class="font-mono text-sm">"[Protocol Title], CiteThis, [URL]"</code>
     </p>
   </div>
 </Base>
