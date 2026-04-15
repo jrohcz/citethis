@@ -156,3 +156,122 @@ body {
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
 }
+
+/* ============================================
+   Pagefind UI — Brutalist B&W Override
+   ============================================ */
+
+.pagefind-ui {
+  --pagefind-ui-scale: 1;
+  --pagefind-ui-primary: var(--text);
+  --pagefind-ui-text: var(--text);
+  --pagefind-ui-background: var(--background);
+  --pagefind-ui-border: var(--border);
+  --pagefind-ui-tag: var(--tag-bg);
+  --pagefind-ui-border-width: 1px;
+  --pagefind-ui-border-radius: 0;
+  --pagefind-ui-image-border-radius: 0;
+  --pagefind-ui-font: Inter, system-ui, sans-serif;
+}
+
+/* Search input */
+.pagefind-ui__search-input {
+  background-color: var(--background) !important;
+  color: var(--text) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: 0 !important;
+  font-family: Inter, system-ui, sans-serif !important;
+  font-size: 1rem !important;
+  font-weight: 500 !important;
+  padding: 0.75rem 1rem !important;
+  box-shadow: none !important;
+  outline: none !important;
+  width: 100% !important;
+}
+
+.pagefind-ui__search-input:focus {
+  border-color: var(--text) !important;
+  box-shadow: none !important;
+}
+
+.pagefind-ui__search-input::placeholder {
+  color: var(--text-muted) !important;
+}
+
+/* Search button / clear */
+.pagefind-ui__search-clear {
+  background-color: var(--tag-bg) !important;
+  color: var(--text-muted) !important;
+  border: none !important;
+  border-radius: 0 !important;
+  font-family: monospace !important;
+  font-size: 0.75rem !important;
+}
+
+/* Results container */
+.pagefind-ui__results {
+  margin-top: 1rem !important;
+  text-align: left !important;
+}
+
+/* Individual result */
+.pagefind-ui__result {
+  border-top: 1px solid var(--border) !important;
+  padding: 1rem 0 !important;
+  margin: 0 !important;
+}
+
+.pagefind-ui__result:last-child {
+  border-bottom: 1px solid var(--border) !important;
+}
+
+/* Result title */
+.pagefind-ui__result-title {
+  font-size: 1rem !important;
+  font-weight: 900 !important;
+  letter-spacing: -0.02em !important;
+}
+
+.pagefind-ui__result-link {
+  color: var(--text) !important;
+  text-decoration: none !important;
+}
+
+.pagefind-ui__result-link:hover {
+  color: var(--text-muted) !important;
+}
+
+/* Result excerpt */
+.pagefind-ui__result-excerpt {
+  font-size: 0.8rem !important;
+  color: var(--text-muted) !important;
+  line-height: 1.6 !important;
+  margin-top: 0.25rem !important;
+}
+
+/* Highlighted match */
+.pagefind-ui__result-excerpt mark {
+  background: transparent !important;
+  color: var(--text) !important;
+  font-weight: 700 !important;
+}
+
+/* Message (no results, loading) */
+.pagefind-ui__message {
+  font-family: monospace !important;
+  font-size: 0.8rem !important;
+  color: var(--text-muted) !important;
+  padding: 1rem 0 !important;
+}
+
+/* Hide result image thumbnails */
+.pagefind-ui__result-image {
+  display: none !important;
+}
+
+/* Nested results */
+.pagefind-ui__result-nested {
+  border-left: 2px solid var(--border) !important;
+  padding-left: 1rem !important;
+  margin-top: 0.5rem !important;
+}
