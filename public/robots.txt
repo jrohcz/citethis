@@ -31,4 +31,4 @@ Allow: /
 User-agent: Applebot
 Allow: /
 
-Sitemap: https://citethis.site/sitemap.xml
+Sitemap: https://citethis.site/sitemap-index.xml
