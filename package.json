@@ -15,6 +15,7 @@
     "@astrojs/mdx": "^5.0.3",
     "@astrojs/sitemap": "^3.7.2",
     "@tailwindcss/vite": "^4.2.2",
+    "@vercel/analytics": "^2.0.1",
     "astro": "^6.1.6",
     "pagefind": "^1.5.2",
     "sharp": "^0.34.5",
