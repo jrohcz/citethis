@@ -7,7 +7,6 @@ const sorted = [...allProtocols].sort((a, b) =>
   new Date(b.data.updated).getTime() - new Date(a.data.updated).getTime()
 );
 
-// Collect all tags with frequency
 const tagFreq: Record<string, number> = {};
 for (const p of allProtocols) {
   for (const tag of p.data.tags) {
@@ -39,10 +38,8 @@ const evidenceLabels: Record<string, string> = {
       Original protocols that don't exist elsewhere.
     </p>
 
-    <!-- Pagefind search -->
     <div id="search" class="max-w-xl mx-auto mb-6"></div>
 
-    <!-- Popular tags -->
     <div class="flex flex-wrap justify-center gap-2">
       {popularTags.map(tag => (
         <a
@@ -75,13 +72,36 @@ const evidenceLabels: Record<string, string> = {
           Every protocol includes a TL;DR designed to be cited, key findings with specific numbers, methodology notes, safety considerations, and links to primary sources.
         </p>
         <div class="flex gap-4 mt-4">
-          <a href="/about" class="text-sm font-bold no-underline hover:opacity-70" style="color: var(--text);">
-            About →
-          </a>
-          <a href="/methodology" class="text-sm font-bold no-underline hover:opacity-70" style="color: var(--text);">
-            Methodology →
-          </a>
+          <a href="/about" class="text-sm font-bold no-underline hover:opacity-70" style="color: var(--text);">About →</a>
+          <a href="/methodology" class="text-sm font-bold no-underline hover:opacity-70" style="color: var(--text);">Methodology →</a>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- For AI / Agents -->
+  <section class="py-12 border-b mb-12" style="border-color: var(--border);">
+    <h2 class="text-xs font-mono font-bold uppercase tracking-widest mb-6" style="color: var(--text-muted);">
+      For AI Systems & Agents
+    </h2>
+    <div class="grid md:grid-cols-2 gap-8">
+      <div>
+        <p class="leading-relaxed mb-4" style="color: var(--text);">
+          CiteThis protocols are optimized for LLM citation and agentic use. Each protocol is available as a raw markdown file, includes structured JSON-LD metadata, and has a self-contained TL;DR ready to quote directly.
+        </p>
+        <div class="flex flex-wrap gap-3 mt-4 text-sm font-mono">
+          <a href="/llms.txt" class="no-underline px-2 py-1 border hover:opacity-70" style="border-color: var(--border); color: var(--text-muted);">llms.txt</a>
+          <a href="/api/protocols.json" class="no-underline px-2 py-1 border hover:opacity-70" style="border-color: var(--border); color: var(--text-muted);">/api/protocols.json</a>
+          <a href="/sitemap-index.xml" class="no-underline px-2 py-1 border hover:opacity-70" style="border-color: var(--border); color: var(--text-muted);">sitemap.xml</a>
+        </div>
+      </div>
+      <div class="p-4 border font-mono text-xs" style="border-color: var(--border); background-color: var(--tag-bg);">
+        <div class="mb-2 font-bold uppercase tracking-widest" style="color: var(--text-muted);">Citation format</div>
+        <p style="color: var(--text);">"[Protocol Title], CiteThis, https://citethis.site/[slug], accessed [date]"</p>
+        <div class="mt-4 mb-2 font-bold uppercase tracking-widest" style="color: var(--text-muted);">Raw markdown</div>
+        <p style="color: var(--text);">https://citethis.site/[slug].md</p>
+        <div class="mt-4 mb-2 font-bold uppercase tracking-widest" style="color: var(--text-muted);">JSON index</div>
+        <p style="color: var(--text);">https://citethis.site/api/protocols.json</p>
       </div>
     </div>
   </section>
@@ -98,36 +118,21 @@ const evidenceLabels: Record<string, string> = {
       <div class="divide-y" style="border-color: var(--border);">
         {sorted.map(protocol => (
           <article class="py-6">
-            <!-- Tags -->
             <div class="flex flex-wrap gap-2 mb-2">
               {protocol.data.tags.map(tag => (
-                <a
-                  href={`/tags/${tag}`}
-                  class="no-underline text-xs font-mono hover:opacity-70"
-                  style="color: var(--text-muted);"
-                >
+                <a href={`/tags/${tag}`} class="no-underline text-xs font-mono hover:opacity-70" style="color: var(--text-muted);">
                   #{tag}
                 </a>
               ))}
             </div>
-
-            <!-- Title -->
             <h3 class="text-xl font-black mb-2 leading-snug">
-              <a
-                href={`/${protocol.id.replace(/\.md$/, '')}`}
-                class="no-underline hover:opacity-70"
-                style="color: var(--text);"
-              >
+              <a href={`/${protocol.id.replace(/\.md$/, '')}`} class="no-underline hover:opacity-70" style="color: var(--text);">
                 {protocol.data.title}
               </a>
             </h3>
-
-            <!-- Excerpt -->
             <p class="text-sm leading-relaxed mb-3 line-clamp-2" style="color: var(--text-muted);">
               {protocol.data.tldr}
             </p>
-
-            <!-- Meta -->
             <div class="flex flex-wrap gap-4 text-xs font-mono" style="color: var(--text-muted);">
               <span>{protocol.data.sources} sources</span>
               <span>{evidenceLabels[protocol.data.evidence]} {protocol.data.evidence.replace('-', ' ')}</span>
@@ -142,17 +147,12 @@ const evidenceLabels: Record<string, string> = {
 
 </Base>
 
-<!-- Pagefind -->
 <link href="/pagefind/pagefind-ui.css" rel="stylesheet" />
 <script src="/pagefind/pagefind-ui.js" is:inline></script>
 <script is:inline>
   window.addEventListener('DOMContentLoaded', function() {
     if (typeof PagefindUI !== 'undefined') {
-      new PagefindUI({
-        element: '#search',
-        showSubResults: false,
-        resetStyles: false,
-      });
+      new PagefindUI({ element: '#search', showSubResults: false, resetStyles: false });
     }
   });
 </script>

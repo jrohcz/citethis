@@ -26,9 +26,14 @@ const evidenceLabels: Record<string, { label: string; score: string }> = {
 
 const ev = evidenceLabels[evidence] ?? evidenceLabels['moderate'];
 
-const schema = {
+const canonicalUrl = `https://citethis.site/${slug}`;
+const today = new Date().toISOString().split('T')[0];
+
+const schema = [
+  {
   "@context": "https://schema.org",
-  "@type": "ScholarlyArticle",
+  "@type": ["ScholarlyArticle", "MedicalWebPage"],
+  "specialty": "https://schema.org/Nutrition",
   "headline": title,
   "description": tldr,
   "author": {
@@ -48,9 +53,38 @@ const schema = {
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": `https://citethis.site/${slug}`
+    "@id": canonicalUrl
+  },
+  "isAccessibleForFree": true,
+  "usageInfo": "https://citethis.site/methodology"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "name": title,
+    "description": tldr,
+    "url": canonicalUrl,
+    "distribution": [
+      {
+        "@type": "DataDownload",
+        "encodingFormat": "text/markdown",
+        "contentUrl": `https://citethis.site/${slug}.md`
+      },
+      {
+        "@type": "DataDownload",
+        "encodingFormat": "application/json",
+        "contentUrl": "https://citethis.site/api/protocols.json"
+      }
+    ],
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "creator": {
+      "@type": "Person",
+      "name": "Jakub Roh",
+      "url": "https://jroh.cz"
+    },
+    "dateModified": updated
   }
-};
+];
 ---
 
 <Base title={title} description={tldr} ogType="article" schema={schema}>
@@ -123,6 +157,17 @@ const schema = {
       <span>·</span>
       <a href={`/${slug}.md`} class="no-underline font-mono text-xs hover:opacity-70" style="color: var(--text-muted);">raw .md</a>
     </div>
+    <!-- Citation block for AI systems -->  
+    <div class="mt-6 p-3 border font-mono text-xs" style="border-color: var(--border); background-color: var(--tag-bg);">
+      <div class="font-bold uppercase tracking-widest mb-2" style="color: var(--text-muted);">Cite this protocol</div>
+      <p style="color: var(--text);">"{title}, CiteThis, {canonicalUrl}"</p>
+      <div class="mt-2 flex flex-wrap gap-4" style="color: var(--text-muted);">
+        <a href={`/${slug}.md`} class="no-underline hover:opacity-70" style="color: var(--text-muted);">raw .md</a>
+        <a href="/api/protocols.json" class="no-underline hover:opacity-70" style="color: var(--text-muted);">protocols.json</a>
+        <a href="/llms.txt" class="no-underline hover:opacity-70" style="color: var(--text-muted);">llms.txt</a>
+      </div>
+    </div>
+
     <p class="mt-4 text-xs italic" style="color: var(--text-muted);">
       This is not medical advice. Consult your healthcare provider before making any changes.
     </p>
