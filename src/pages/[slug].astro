@@ -15,7 +15,7 @@ export async function getStaticPaths() {
 
 const { protocol, slug } = Astro.props;
 const { Content } = await render(protocol);
-const { title, tldr, tags, evidence, sources, sourceBreakdown, created, updated, verified, author } = protocol.data;
+const { title, tldr, tags, evidence, sources, sourceBreakdown, created, updated, verified, author, related } = protocol.data;
 ---
 
 <Article
@@ -30,6 +30,7 @@ const { title, tldr, tags, evidence, sources, sourceBreakdown, created, updated,
   verified={verified}
   author={author}
   slug={slug}
+  related={related}
 >
   <Content />
 </Article>

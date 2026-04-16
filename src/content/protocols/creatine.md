@@ -8,6 +8,8 @@ created: "2026-04-15"
 updated: "2026-04-15"
 verified: "2026-04-15"
 author: jroh.cz
+related:
+  - adhd-supplements
 tldr: "Creatine monohydrate at 3–5g/day saturates muscle stores in 3–4 weeks; loading (20g/day for 5–7 days) accelerates this. For larger individuals (90kg+), 5–10g/day maintenance may be optimal. Cognitive benefits are strongest in sleep-deprived individuals, vegetarians, and older adults. Safety data supports doses up to 30g/day long-term with no adverse effects on kidney or liver function."
 ---
 

@@ -1,5 +1,6 @@
 ---
 import Base from './Base.astro';
+import RelatedProtocols from '../components/RelatedProtocols.astro';
 
 interface Props {
   title: string;
@@ -13,9 +14,10 @@ interface Props {
   verified: string;
   author: string;
   slug: string;
+  related?: string[];
 }
 
-const { title, tldr, tags, evidence, sources, sourceBreakdown, created, updated, verified, author, slug } = Astro.props;
+const { title, tldr, tags, evidence, sources, sourceBreakdown, created, updated, verified, author, slug, related } = Astro.props;
 
 const evidenceLabels: Record<string, { label: string; score: string }> = {
   'strong': { label: 'Strong Evidence', score: '4/4' },
@@ -133,6 +135,13 @@ const schema = [
   <article class="prose max-w-none">
     <slot />
   </article>
+
+  <!-- Related Protocols -->
+  <RelatedProtocols
+    currentSlug={slug}
+    manualRelated={related}
+    tags={tags}
+  />
 
   <!-- Article footer -->
   <div class="mt-12 pt-8 border-t text-sm" style="border-color: var(--border); color: var(--text-muted);">

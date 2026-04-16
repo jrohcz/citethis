@@ -46,6 +46,12 @@
       "default": false,
       "type": "boolean"
     },
+    "related": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
     "$schema": {
       "type": "string"
     }

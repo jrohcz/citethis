@@ -16,6 +16,7 @@ const protocols = defineCollection({
     author: z.string().default('jroh.cz'),
     tldr: z.string(),
     draft: z.boolean().default(false),
+    related: z.array(z.string()).optional(),
   }),
 });
 

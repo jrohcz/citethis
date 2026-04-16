@@ -1,0 +1,120 @@
+---
+import { getCollection } from 'astro:content';
+
+interface Props {
+  currentSlug: string;
+  manualRelated?: string[];
+  tags?: string[];
+}
+
+const { currentSlug, manualRelated, tags = [] } = Astro.props;
+
+const allProtocols = await getCollection('protocols', ({ data }) => !data.draft);
+
+let related: typeof allProtocols = [];
+
+if (manualRelated?.length) {
+  // Use manual list — filter by slug match
+  related = allProtocols.filter(p => {
+    const slug = p.id.replace(/\.md$/, '');
+    return manualRelated.includes(slug);
+  });
+} else {
+  // Auto-generate: same prefix OR 2+ matching tags
+  related = allProtocols.filter(p => {
+    const slug = p.id.replace(/\.md$/, '');
+    if (slug === currentSlug) return false;
+
+    // Same prefix (e.g., adhd-sleep, adhd-gut) — prefix must be >3 chars to avoid false matches
+    const currentPrefix = currentSlug.split('-')[0];
+    const pPrefix = slug.split('-')[0];
+    if (currentPrefix === pPrefix && currentPrefix.length > 3) return true;
+
+    // 2+ matching tags
+    const pTags = p.data.tags || [];
+    const matchingTags = tags.filter(t => pTags.includes(t));
+    if (matchingTags.length >= 2) return true;
+
+    return false;
+  });
+}
+
+// Limit to 4
+related = related.slice(0, 4);
+
+const evidenceLabels: Record<string, string> = {
+  'strong': 'Strong Evidence',
+  'moderate': 'Moderate Evidence',
+  'preliminary': 'Preliminary Evidence',
+  'expert-opinion': 'Expert Opinion',
+};
+---
+
+{related.length > 0 && (
+  <section class="related-protocols">
+    <h2 class="related-heading">Related Protocols</h2>
+    <div class="related-grid">
+      {related.map(p => {
+        const slug = p.id.replace(/\.md$/, '');
+        return (
+          <a href={`/${slug}`} class="related-card">
+            <span class="related-title">{p.data.title}</span>
+            <span class="related-evidence">{evidenceLabels[p.data.evidence] ?? p.data.evidence}</span>
+          </a>
+        );
+      })}
+    </div>
+  </section>
+)}
+
+<style>
+  .related-protocols {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border);
+  }
+
+  .related-heading {
+    font-size: 1rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 1rem;
+    color: var(--text);
+  }
+
+  .related-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+
+  .related-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    padding: 1rem;
+    border: 1px solid var(--border);
+    text-decoration: none;
+    color: var(--text);
+    transition: border-color 0.15s;
+  }
+
+  .related-card:hover {
+    border-color: var(--text);
+  }
+
+  .related-title {
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 1.4;
+  }
+
+  .related-evidence {
+    font-size: 0.7rem;
+    font-family: monospace;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-muted);
+  }
+</style>
