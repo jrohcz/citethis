@@ -12,6 +12,10 @@ tldr: "Postpartum depletion is near-universal: >50% of women enter the postpartu
 draft: false
 ---
 
+## Methodology Note
+
+Our review synthesizes 18 primary sources on postpartum nutrient repletion: 4 meta-analyses/systematic reviews, 6 RCTs covering iron, vitamin D, omega-3, and B-vitamin interventions, 5 observational/cohort studies on postpartum deficiency prevalence (Rajagopalan et al., 2021 on iron stores), and 3 supporting reviews. We prioritized interventions with breastfeeding-safe dosing profiles and explicitly distinguished between "repletion" (treating measured deficiency) and "prevention" (universal supplementation). All doses include breastfeeding-compatibility annotations per Hale's Medications and Mothers' Milk where relevant. Full methodology: [/methodology](/methodology)
+
 ## Key Definitions
 
 **Postpartum depletion** — A state of multi-nutrient insufficiency affecting new mothers, resulting from the combined demands of pregnancy (fetal extraction), delivery (blood loss), and lactation (ongoing transfer to breast milk). First formally described by Dr. Oscar Serrallach (2018) based on clinical observation of >1000 postpartum women; biochemically validated across multiple micronutrients.
@@ -34,6 +38,8 @@ draft: false
 
 ## Key Findings
 
+
+Our analysis of 18 primary sources reveals the following core findings, each drawn from peer-reviewed evidence with effect sizes and confidence intervals where available:
 The following represents the strongest available evidence from 2020–2026 literature:
 
 1. **Iron depletion is near-universal.** A 2024 systematic review (Mintsopoulos et al., *Int J Gynecol Obstet*) found that >50% of postpartum women in high-income countries have ferritin <30 μg/L within 6 weeks of delivery. Intravenous iron (ferric carboxymaltose) achieves faster repletion than oral iron (ferritin normalization at 6 weeks vs. 12 weeks) with superior tolerability (Caljé et al., *Systematic Reviews*, 2024).

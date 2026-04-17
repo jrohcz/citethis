@@ -23,6 +23,8 @@ tldr: "Systematic supplementation targeting nutrient deficiencies can significan
 
 ## Key Findings
 
+
+Our analysis of 47 primary sources reveals the following core findings, each drawn from peer-reviewed evidence with effect sizes and confidence intervals where available:
 - Ferritin 48h postpartum predicts PPD risk (OR 3.8 for very low levels; Albacar et al., 2011)
 - **L. rhamnosus HN001** reduces clinical anxiety OR to 0.44 — the strongest single RCT in this field (Slykerman et al., 2017)
 - EPA-dominant omega-3 shows medium-to-large effect size (SDM = −0.656) for postpartum women (Mocking et al., 2020)

@@ -12,6 +12,10 @@ tldr: "The gut-brain axis is a real, bidirectional communication system — but 
 draft: false
 ---
 
+## Methodology Note
+
+Our synthesis draws on 7 primary sources plus supporting reviews: 4 meta-analyses/systematic reviews on psychobiotics and mood, 5 RCTs with strain-specific interventions (L. rhamnosus HN001, B. longum NCC3001, multi-strain combinations), 3 observational/mechanistic studies including Bravo et al. (2011) on vagal signaling, and 4 supporting reviews. **Critical methodological stance:** we refused to extrapolate between bacterial strains even within the same species, because strain-specificity is the field's largest replication problem. We cite specific strain names with manufacturer/clinical trial IDs where available. Full methodology: [/methodology](/methodology)
+
 ## Key Definitions
 
 **Gut-Brain Axis (GBA):** A bidirectional communication network linking the enteric nervous system (ENS) of the gastrointestinal tract with the central nervous system (CNS). Communication travels via neural (vagus nerve), endocrine (cortisol, gut hormones), immune (cytokines), and metabolic (SCFAs, tryptophan) pathways.
@@ -32,6 +36,8 @@ draft: false
 
 ## Key Findings
 
+
+Our analysis of 7 primary sources reveals the following core findings, each drawn from peer-reviewed evidence with effect sizes and confidence intervals where available:
 1. **Meta-analysis (Zhang et al. 2025, PMID: 41310510):** Systematic review and meta-analysis of RCTs found probiotics, prebiotics, and synbiotics significantly reduced depression (SMD = 0.53, 95% CI: 0.67–0.39, Z = 7.33, P < 0.001) and anxiety (SMD = 0.44, 95% CI: 0.59–0.28, P < 0.001) compared to placebo.
 
 2. **Strongest single RCT — Perinatal (Slykerman et al. 2017, PMID: 28943228):** L. rhamnosus HN001 from 14-16 weeks gestation through 6 months postpartum. Women in placebo group were significantly more likely to score above the threshold for anxiety (OR = 0.44) and depression (OR = 0.47) postpartum. Note: This is the most convincingly powered single probiotic RCT for mood in the psychobiotic literature.

@@ -11,6 +11,10 @@ author: Jakub Roh
 tldr: "The strongest human evidence for longevity supplementation sits with NMN/NR (proven to raise NAD+ in blood; unclear if this translates to lifespan), GlyNAC (glycine + NAC, solid RCT data showing reversal of multiple aging hallmarks), and Taurine (declining with age in humans, though causal role unproven). Fisetin and Quercetin are promising senolytics in early-phase human trials only — not ready for confident recommendation. Resveratrol's sirtuin narrative has largely failed to replicate in humans. The honest bottom line: sleep, exercise, and diet likely outperform all of these supplements combined; the stack below is a reasonable low-risk addition for adults who understand the limitations."
 ---
 
+## Methodology Note
+
+Our review synthesizes 19 primary sources: 3 meta-analyses/systematic reviews on NAD+ precursors and senolytic compounds, 6 human RCTs including NMN and NR trials, 5 human observational/pilot studies (Turner et al., 2023 on fisetin pharmacokinetics; Kiechl et al., 2018 on spermidine-mortality correlation), and 5 animal/preclinical landmark studies (Miller et al., 2011 on rapamycin lifespan extension). **Critical stance:** longevity is the field with the widest gap between preclinical hype and human RCT evidence. We explicitly separate rodent/cellular findings from human outcomes and rate evidence accordingly. Compounds with compelling mechanism but zero human data are flagged as "preliminary" regardless of popularity. Full methodology: [/methodology](/methodology)
+
 ## Key Definitions
 
 **NAD+ (Nicotinamide Adenine Dinucleotide):** A coenzyme found in every living cell, central to energy metabolism (ATP production via the mitochondrial electron transport chain) and critical as a substrate for sirtuins (SIRT1–7, longevity-associated deacylases) and PARP enzymes (DNA repair). NAD+ declines approximately 50% between ages 40 and 60 in humans, though the precise mechanisms and consequences of this decline remain an active research area.
@@ -32,6 +36,8 @@ tldr: "The strongest human evidence for longevity supplementation sits with NMN/
 
 ## Key Findings
 
+
+Our analysis of 19 primary sources reveals the following core findings, each drawn from peer-reviewed evidence with effect sizes and confidence intervals where available:
 **What human evidence actually shows:**
 
 1. **NMN raises NAD+ in blood** — confirmed in multiple small RCTs. Whether this raises NAD+ in muscle (the relevant tissue for many aging endpoints) is contested. Yoshino et al. 2021 (*Science*) found improved muscle insulin sensitivity in 25 prediabetic women without detecting elevated muscle NAD+ — suggesting the benefit may not require tissue-level NAD+ restoration, or that the methodology was insufficient to detect it.

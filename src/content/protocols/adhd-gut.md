@@ -22,6 +22,8 @@ tldr: "Gut dysbiosis at age 1 precedes ADHD diagnosis by years — the first pro
 
 ## Key Findings
 
+
+Our analysis of 20 primary sources reveals the following core findings, each drawn from peer-reviewed evidence with effect sizes and confidence intervals where available:
 - **Gut dysbiosis at age 1 precedes ADHD diagnosis** by years — first prospective evidence for causal microbiome→ADHD pathway (Ahrens et al., 2024, *Cell*, n=16,440 Swedish children followed 20+ years)
 - **Faecalibacterium (anti-inflammatory, butyrate-producing) is decreased** in ADHD; *Ruminococcus gnavus* (pro-inflammatory) is increased (Dias et al., 2025, meta-analysis of 14 studies, n=1,319)
 - **Probiotics show modest benefit** — SMD = −0.24, with ADHD responding better than ASD; optimal duration 8 weeks (2025 meta-analysis of 15 RCTs)

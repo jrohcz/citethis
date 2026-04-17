@@ -12,6 +12,10 @@ tldr: "Postpartum brain fog is neurobiologically real — pregnancy reshapes gra
 draft: false
 ---
 
+## Methodology Note
+
+Our synthesis draws on 16 primary sources: 3 meta-analyses/systematic reviews on postpartum cognitive recovery, 7 RCTs covering omega-3, iron, vitamin D, and choline interventions, 4 observational/longitudinal studies including Hoekzema et al. (2017) on structural brain changes in pregnancy, and 4 supporting mechanistic reviews. We prioritized evidence with direct postpartum cognitive outcomes over extrapolations from non-postpartum populations. Where RCT evidence was absent, we explicitly flagged mechanistic reasoning vs. human trial data. Full methodology: [/methodology](/methodology)
+
 ## Key Definitions
 
 **Brain fog (postpartum):** No formal clinical diagnosis exists. Clinically described as subjective cognitive impairment encompassing memory lapses, word-finding difficulty, reduced processing speed, and attentional deficits. Sometimes called "mommy brain" or "pregnancy brain" in lay literature. Distinct from intellectual ability — affects working memory and prospective memory (remembering to do things) more than crystallized intelligence or problem-solving capacity.
@@ -30,6 +34,8 @@ draft: false
 
 ## Key Findings
 
+
+Our analysis of 16 primary sources reveals the following core findings, each drawn from peer-reviewed evidence with effect sizes and confidence intervals where available:
 1. **Gray matter restructuring is functional, not pathological.** Hoekzema et al. (2017) demonstrated that pregnancy-induced gray matter reductions in social cognition networks persist for at least 2 years postpartum — and these changes correlate with *stronger* maternal attachment, not cognitive deficits. The brain is specializing, not degrading.
 
 2. **DHA depletion is the most nutritionally modifiable driver of postpartum cognitive decline.** Pregnancy and lactation deplete maternal DHA stores. Unlike PPD (where EPA-to-DHA ratios of 2:1 or higher are used for mood), cognitive support protocols prioritize high-DHA supplementation (≥600mg DHA/day).

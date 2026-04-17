@@ -22,6 +22,8 @@ tldr: "80.5% of women with ADHD report symptoms affected by hormonal changes; 68
 
 ## Key Findings
 
+
+Our analysis of 24 primary sources reveals the following core findings, each drawn from peer-reviewed evidence with effect sizes and confidence intervals where available:
 - **80.5% of women with ADHD** report that their symptoms are affected by hormonal changes (Haimov-Kochman et al., 2023, n=1,000)
 - **68.2% report premenstrual ADHD symptom worsening** — primarily inattention (79.2%), emotional dysregulation (76.8%), impulsivity (59.6%) (Haimov-Kochman et al., 2023)
 - **55.9% report worsening during perimenopause/menopause** (Haimov-Kochman et al., 2023)

@@ -12,6 +12,10 @@ tldr: "The strongest evidence-based sleep supplement stack centers on four compo
 draft: false
 ---
 
+## Methodology Note
+
+Our synthesis draws on 12 primary sources: 3 meta-analyses on melatonin, magnesium, and glycine for sleep, 8 RCTs covering apigenin, L-theanine, GABA, and magnesium threonate, 2 observational/mechanistic studies, and 4 supporting animal/mechanistic references used only where human data was sparse. **Critical distinction applied throughout:** we separate "sleep onset" interventions (acting within 30-60 minutes — e.g., melatonin 0.3mg, L-theanine 200mg) from "sleep architecture" interventions (acting over 2-4 weeks — e.g., magnesium glycinate, glycine 3g). Each compound's dose includes timing and expected-onset window. Full methodology: [/methodology](/methodology)
+
 ## Key Definitions
 
 **Sleep architecture** refers to the cyclical structure of sleep, organized into 90–110-minute cycles across the night, each containing multiple stages: N1 (light transition), N2 (sleep spindles, K-complexes — the bulk of sleep), N3 (slow-wave/deep sleep, critical for physical restoration and memory consolidation), and REM (rapid eye movement, associated with emotional processing and procedural memory).
@@ -38,6 +42,8 @@ draft: false
 
 ## Key Findings
 
+
+Our analysis of 12 primary sources reveals the following core findings, each drawn from peer-reviewed evidence with effect sizes and confidence intervals where available:
 The strongest signals in the evidence base for sleep supplementation come from several converging lines of research:
 
 1. **Glycine 3 g before bed** produces measurable polysomnographic improvements in sleep efficiency and reductions in sleep latency in volunteers with sleep complaints — the Yamadera et al. (2007) crossover RCT is the foundational reference. The mechanism (core body temperature reduction via NMDA receptors in the SCN) was confirmed in subsequent animal mechanistic work (Kawai et al. 2009; Bannai & Kawai 2012). This compound is probably the most underrated and underutilized sleep supplement relative to its evidence base.

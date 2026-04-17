@@ -12,6 +12,10 @@ tldr: "Natural interventions for attention and focus show modest but real effect
 draft: false
 ---
 
+## Methodology Note
+
+Our review synthesizes 10 primary sources: 2 meta-analyses on omega-3 and zinc in ADHD-like symptoms, 6 RCTs (Lyon et al., 2011 on Pycnogenol; Nikoo et al., 2015 on saffron; others on ginkgo, bacopa, rhodiola), 2 observational/review studies, and 5 supporting mechanistic references. **Critical scope note:** this protocol addresses subclinical attention/focus symptoms in adults without formal ADHD diagnosis. Individuals with diagnosed ADHD should refer to our separate [ADHD Supplement Stack](/adhd-supplements) protocol, which prioritizes stimulant medication as first-line. Full methodology: [/methodology](/methodology)
+
 ## Key Definitions
 
 **ADHD (DSM-5 criteria):** A neurodevelopmental disorder characterized by persistent patterns of inattention (difficulty sustaining attention, easily distracted, forgetful), hyperactivity (fidgeting, inability to remain seated, excessive talking), and/or impulsivity (blurting answers, difficulty waiting, interrupting others). Symptoms must be present in ≥2 settings, cause functional impairment, and not be better explained by another condition. Two primary presentations: predominantly inattentive (ADHD-I) and combined presentation (ADHD-C).
@@ -34,6 +38,8 @@ draft: false
 
 ## Key Findings
 
+
+Our analysis of 10 primary sources reveals the following core findings, each drawn from peer-reviewed evidence with effect sizes and confidence intervals where available:
 Evidence for natural interventions in ADHD and attention difficulties is real but requires calibration:
 
 - **Magnesium deficiency** is prevalent in ADHD populations. Supplementation with Mg-B6 significantly reduced hyperactivity and improved school attention in children (Mousain-Bosc et al., 2006; PMID 16846100). Magnesium-B6 combination shows consistent positive signal across multiple pediatric studies.

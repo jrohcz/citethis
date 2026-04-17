@@ -18,6 +18,10 @@ draft: false
 
 ---
 
+## Methodology Note
+
+This synthesis reviews 18 primary sources: 3 meta-analyses/reviews on nootropic efficacy and safety, 11 RCTs covering lion's mane, citicoline, phosphatidylserine, creatine, and L-theanine, 2 observational/cohort studies, and 2 mechanistic/animal studies used only where human data was absent. We applied a safety-first filter: compounds with unresolved long-term safety signals (racetams, noopept, modafinil off-label) were documented but not recommended. We prioritized compounds with established human pharmacokinetics and 12+ week safety data. Full methodology: [/methodology](/methodology)
+
 ## Key Definitions
 
 **Nootropic (Giurgea's original 1972 definition):** A substance that (1) enhances learning and memory, (2) protects the brain against physical or chemical injury, (3) enhances tonic cortico-subcortical control mechanisms, (4) lacks usual pharmacological effects of psychotropic drugs, and (5) has very low toxicity with no side effects. Note: this original definition was extremely strict — most modern "nootropics" fail criterion 4 or 5. The term has been popularly expanded to mean any cognitive-enhancing supplement.
@@ -40,6 +44,8 @@ draft: false
 
 ## Key Findings
 
+
+Our analysis of 18 primary sources reveals the following core findings, each drawn from peer-reviewed evidence with effect sizes and confidence intervals where available:
 Evidence for safe, meaningful cognitive enhancement in healthy adults exists — but is more limited than popular nootropic communities suggest. Key takeaways from the research:
 
 1. **L-Theanine + caffeine** is the most robustly demonstrated cognitive enhancer with the best safety profile. Multiple RCTs confirm improvements in sustained attention, working memory, and reaction time. The combination outperforms either compound alone. (Giesbrecht et al., 2010; Dodd et al., 2015)

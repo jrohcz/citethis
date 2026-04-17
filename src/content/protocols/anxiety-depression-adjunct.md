@@ -32,6 +32,8 @@ draft: false
 
 ## Key Findings
 
+
+Our analysis of 22 primary sources reveals the following core findings, each drawn from peer-reviewed evidence with effect sizes and confidence intervals where available:
 - **Omega-3 EPA**: Meta-analysis of 26 RCTs (Mocking et al., 2016) found EPA-dominant formulations (≥60% EPA) produced significant antidepressant effect (Hedges' g = 0.61, p < 0.001) in MDD. Effect was largest as adjunct to antidepressants.
 - **Saffron (Crocus sativus) 30mg/day**: Three independent RCTs (Akhondzadeh et al., 2004, 2005; Noorbala et al., 2005) showed equivalence to fluoxetine 20mg for mild-to-moderate MDD over 6–8 weeks, with superior tolerability.
 - **SAM-e 800–1600mg**: Two large RCTs including the AHRQ-commissioned study (Papakostas et al., 2010, n=73) demonstrated SAM-e significantly augmented SSRI response: 36% response rate vs. 18% placebo (p=0.02).

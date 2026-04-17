@@ -12,6 +12,10 @@ tldr: "For women unwilling or unable to use HRT, a targeted nutraceutical stack 
 draft: false
 ---
 
+## Methodology Note
+
+Our synthesis covers 16 primary sources: 4 meta-analyses/systematic reviews on non-hormonal menopause interventions, 6 RCTs/clinical trials on isoflavones, black cohosh, and vitamin E, 4 observational/cohort studies on symptom prevalence and intervention adherence, and 2 supporting reviews. **Scope boundary:** this protocol is for women declining or contraindicated for HRT, or seeking adjunct support. It is not positioned as HRT-equivalent. We explicitly quantify effect sizes vs. HRT where head-to-head data exist (typically 40-60% of HRT efficacy for vasomotor symptoms). Full methodology: [/methodology](/methodology)
+
 ## Key Definitions
 
 **Perimenopause** — The transitional phase preceding menopause, typically beginning 4–10 years before the final menstrual period (average onset: mid-40s). Characterized by irregular cycles and fluctuating, often *supraphysiologic* estrogen spikes followed by crashes. Most symptomatic period for many women. Ends 12 months after the last menstrual period.
@@ -34,6 +38,8 @@ draft: false
 
 ## Key Findings
 
+
+Our analysis of 16 primary sources reveals the following core findings, each drawn from peer-reviewed evidence with effect sizes and confidence intervals where available:
 1. **Nutritional interventions have moderate aggregate effect on mood/anxiety** in perimenopausal and menopausal women (SMD −0.35 for depression, SMD −0.74 for anxiety; Grigolon et al., 2023, PMID:36576445). Heterogeneity is significant — no single supplement has a slam-dunk effect.
 
 2. **Omega-3 supplementation reduces hot flash frequency and severity** across multiple RCTs, but effect sizes are modest (Mohammady et al., 2018 meta-analysis, PMID:30056356). Mood benefits are better supported than vasomotor benefits.

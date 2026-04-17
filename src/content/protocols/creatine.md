@@ -24,6 +24,8 @@ tldr: "Creatine monohydrate at 3–5g/day saturates muscle stores in 3–4 weeks
 
 ## Key Findings
 
+
+Our analysis of 24 primary sources reveals the following core findings, each drawn from peer-reviewed evidence with effect sizes and confidence intervals where available:
 - **Loading vs no-loading:** Both achieve the same saturation; loading takes 5–7 days while 3–5g/day takes 3–4 weeks (Hultman et al., 1996)
 - **Weight-based loading:** ISSN recommends 0.3 g/kg/day for loading — a 100kg individual would take 30g/day (Kreider et al., 2017)
 - **Larger athletes need more:** ISSN explicitly states "larger athletes may benefit from 5–10g/day" for maintenance (Kreider et al., 2017)

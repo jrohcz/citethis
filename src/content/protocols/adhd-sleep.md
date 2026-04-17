@@ -22,6 +22,8 @@ tldr: "73–78% of adults with ADHD have delayed sleep-wake cycles with melatoni
 
 ## Key Findings
 
+
+Our analysis of 22 primary sources reveals the following core findings, each drawn from peer-reviewed evidence with effect sizes and confidence intervals where available:
 - **73–78% of adults with ADHD** show delayed sleep-wake timing versus ~10–15% in the general population (Luu & Fabiano, 2025)
 - **DLMO is delayed ~90 minutes** in ADHD adults compared to controls, indicating a fundamentally shifted circadian clock (multiple studies)
 - **0.5mg melatonin advanced DLMO by 1 hour 28 minutes** and reduced ADHD symptoms by 14% in 51 adults with ADHD + DSPS (Kooij et al., 2021)

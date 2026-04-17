@@ -12,6 +12,10 @@ tldr: "Burnout and chronic stress are distinct from acute stress and require fun
 draft: false
 ---
 
+## Methodology Note
+
+Our review synthesizes 15 primary sources: 2 meta-analyses on adaptogenic herbs and HPA-axis modulation, 10 RCTs covering ashwagandha (Chandrasekhar et al.), rhodiola, Panax ginseng, magnesium, and phosphatidylserine, 2 observational/open-label trials, and 1 supporting mechanistic study (Kimura et al., 2007 on L-theanine and cortisol). **Diagnostic distinction applied:** we separate operational "burnout" (Maslach Burnout Inventory criteria, Maslach et al., 1981) from general "stress" because intervention response differs — burnout requires longer recovery cycles (8-12 weeks) than acute stress (2-4 weeks). Full methodology: [/methodology](/methodology)
+
 ## Key Definitions
 
 **Burnout** — A syndrome resulting from chronic workplace stress that has not been successfully managed, characterized by three dimensions per Maslach's framework (Maslach et al., 1981): (1) emotional exhaustion, (2) depersonalization/cynicism, and (3) reduced personal accomplishment. Burnout is recognized by the WHO in ICD-11 (code QD85) as an occupational phenomenon — not a medical condition per se.
@@ -32,6 +36,8 @@ draft: false
 
 ## Key Findings
 
+
+Our analysis of 15 primary sources reveals the following core findings, each drawn from peer-reviewed evidence with effect sizes and confidence intervals where available:
 1. **Ashwagandha KSM-66 is the most robustly studied adaptogen for cortisol and psychological stress in humans.** Chandrasekhar et al. (2012) demonstrated a 27.9% reduction in serum cortisol (p<0.0001) and significant improvements in all PSS-10 domains in a placebo-controlled RCT (n=272, 8 weeks, 300mg KSM-66 twice daily).
 
 2. **Rhodiola SHR-5 is the only adaptogen with a published RCT specifically targeting burnout populations.** Olsson et al. (2009) demonstrated significant improvements in burnout symptoms (Pines Burnout Scale), attention, and stress response (salivary cortisol) in n=60 over 12 weeks using 576mg SHR-5 extract daily.

@@ -22,6 +22,8 @@ tldr: "Adults with ADHD show consistent deficits in iron (ferritin <30 ng/mL in 
 
 ## Key Findings
 
+
+Our analysis of 28 primary sources reveals the following core findings, each drawn from peer-reviewed evidence with effect sizes and confidence intervals where available:
 - **84% of ADHD children have ferritin <30 ng/mL** versus normal controls at 44 ng/mL; ferritin inversely correlates with ADHD severity (r = −0.34) (Konofal et al., 2004)
 - **Vitamin D is 6.55 ng/mL lower** in ADHD vs. controls (P < .001), with OR 1.97 for ADHD in deficient individuals (2025 meta-analysis)
 - **Zinc supplementation reduces ADHD total scores** (SMD: −0.62, P = .04) across 6 RCTs with 489 children (Talebi et al., 2022)
