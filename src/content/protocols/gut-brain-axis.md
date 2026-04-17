@@ -1,12 +1,12 @@
 ---
 title: "Gut-Brain Axis: Evidence-Based Psychobiotic & Supplement Protocol"
-tags: [gut-brain, probiotics, psychobiotics, anxiety, depression, microbiome, lactobacillus, bifidobacterium, omega-3, inositol, SCFA, vagus-nerve]
+tags: [gut-brain, probiotics, psychobiotics, anxiety, depression, microbiome, lactobacillus, bifidobacterium, omega-3, inositol, scfa, vagus-nerve]
 evidence: moderate
 sources: 7
 created: "2026-04-15"
 updated: "2026-04-15"
 verified: "2026-04-15"
-author: jroh.cz
+author: Jakub Roh
 sourceBreakdown: "4 meta-analyses/systematic reviews, 5 RCTs, 3 observational/mechanistic, 4 supporting reviews"
 tldr: "The gut-brain axis is a real, bidirectional communication system — but the psychobiotic field suffers from a critical strain-specificity problem: evidence for one strain cannot be extrapolated to another, even within the same species. The strongest human RCT evidence comes from L. rhamnosus HN001 (perinatal mood, OR 0.44), B. longum NCC3001 (IBS-related depression with fMRI confirmation), and multi-strain combinations. Omega-3 and inositol provide complementary mechanisms. This protocol layers interventions by evidence strength across 3 phases, with dietary change as the non-negotiable foundation."
 draft: false

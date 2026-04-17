@@ -1,12 +1,12 @@
 ---
 title: "Focus & ADHD-Like Symptoms: Evidence-Based Natural Support Protocol"
-tags: [ADHD, focus, attention, inositol, NAC, magnesium, theanine, rhodiola, brain-fog, dopamine, executive-function, omega-3, zinc, iron]
+tags: [adhd, focus, attention, inositol, nac, magnesium, theanine, rhodiola, brain-fog, dopamine, executive-function, omega-3, zinc, iron]
 evidence: moderate
 sources: 10
 created: "2026-04-15"
 updated: "2026-04-15"
 verified: "2026-04-15"
-author: jroh.cz
+author: Jakub Roh
 sourceBreakdown: "2 meta-analyses, 6 RCTs, 2 observational/review, 5 supporting"
 tldr: "Natural interventions for attention and focus show modest but real effects — especially for non-diagnosed 'brain fog' and subclinical attention difficulties. For clinically diagnosed ADHD, medication (stimulants or atomoxetine) remains the gold standard with the strongest evidence; natural compounds are best used as adjuncts or in cases where medication is declined. The strongest-evidenced natural interventions are: Magnesium (especially in those who are deficient), L-Theanine + low-dose caffeine (best acute focus combo), Omega-3 fatty acids EPA-dominant (particularly in children), and NAC for impulsivity. Effect sizes are consistently smaller than pharmaceutical interventions."
 draft: false

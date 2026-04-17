@@ -6,7 +6,7 @@ sources: 18
 created: "2026-04-15"
 updated: "2026-04-15"
 verified: "2026-04-15"
-author: jroh.cz
+author: Jakub Roh
 sourceBreakdown: "4 meta-analyses/systematic reviews, 6 RCTs, 5 observational/cohort, 3 supporting reviews"
 tldr: "Postpartum depletion is near-universal: >50% of women enter the postpartum period iron-deficient, with ferritin commonly <30 μg/L; optimal target is >50 μg/L for symptom resolution. Vitamin D deficiency affects 40–80% of new mothers and requires 2000–4000 IU/day for repletion. DHA depletion at delivery averages 48–50% vs. pre-pregnancy levels and directly correlates with mood and cognitive performance. A phased 6–12 month protocol combining iron + D3/K2 + magnesium glycinate + B12/methylfolate + omega-3 DHA/EPA resolves the majority of postpartum fatigue, brain fog, and telogen effluvium within 3–6 months."
 draft: false

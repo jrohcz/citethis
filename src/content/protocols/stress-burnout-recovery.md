@@ -1,12 +1,12 @@
 ---
 title: "Stress & Burnout Recovery: Evidence-Based Adaptogen & Mineral Protocol"
-tags: [stress, burnout, adaptogens, ashwagandha, rhodiola, magnesium, cortisol, HPA-axis, recovery, phosphatidylserine, l-theanine, b-vitamins]
+tags: [stress, burnout, adaptogens, ashwagandha, rhodiola, magnesium, cortisol, hpa-axis, recovery, phosphatidylserine, l-theanine, b-vitamins]
 evidence: moderate
 sources: 15
 created: "2026-04-15"
 updated: "2026-04-15"
 verified: "2026-04-15"
-author: jroh.cz
+author: Jakub Roh
 sourceBreakdown: "2 meta-analyses/systematic reviews, 10 RCTs, 2 observational/open-label, 1 supporting mechanistic"
 tldr: "Burnout and chronic stress are distinct from acute stress and require fundamentally different interventions — adaptogens modulate HPA axis dysregulation rather than simply suppressing it. The strongest human evidence supports Ashwagandha KSM-66 (cortisol ↓27.9% in 8-week RCT, n=272) and Rhodiola SHR-5 extract (only adaptogen with a dedicated burnout RCT showing fatigue reversal). Timing matters critically: Rhodiola in the morning for HPA normalization, Ashwagandha and Magnesium in the evening for cortisol lowering. Supplements are supportive — lifestyle (sleep, exercise timing, nature exposure) is the primary intervention; without it, adaptogens provide marginal benefit."
 draft: false

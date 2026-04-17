@@ -6,7 +6,7 @@ sources: 22
 created: "2026-04-15"
 updated: "2026-04-15"
 verified: "2026-04-15"
-author: jroh.cz
+author: Jakub Roh
 sourceBreakdown: "8 meta-analyses, 10 RCTs, 2 observational, 2 supporting"
 tldr: "A seven-compound nutraceutical protocol (Omega-3 EPA ≥60%, Saffron 30mg, SAM-e, L-Methylfolate, Zinc, Curcumin+piperine, Magnesium glycinate) has demonstrated adjunctive efficacy for anxiety and depression across multiple RCTs and meta-analyses. Omega-3 EPA (≥1g/day) reduces depressive symptoms with effect size d≈0.61 in meta-analysis; Saffron 30mg/day matches fluoxetine 20mg in multiple head-to-head RCTs (n=40–60 per study). SAM-e (800–1600mg) and L-Methylfolate (15mg) show strong evidence specifically as SSRI augmentation. This protocol is intended as an adjunct to, not replacement for, standard psychiatric care."
 draft: false

@@ -1,19 +1,76 @@
 ---
 import { getCollection, render } from 'astro:content';
 import Article from '../layouts/Article.astro';
+import fs from 'node:fs';
+import path from 'node:path';
 
 export async function getStaticPaths() {
+  // Extract FAQ pairs from markdown: H3 questions (ending with ?) + body text until next heading
+  const extractFaq = (body: string): Array<{ q: string; a: string }> => {
+    const lines = body.split('\n');
+    const entries: Array<{ q: string; a: string }> = [];
+    let currentQ: string | null = null;
+    let buffer: string[] = [];
+
+    const flush = () => {
+      if (currentQ && buffer.length) {
+        let answer = buffer.join(' ')
+          .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
+          .replace(/\*\*([^*]+)\*\*/g, '$1')
+          .replace(/\*([^*]+)\*/g, '$1')
+          .replace(/`([^`]+)`/g, '$1')
+          .replace(/\s+/g, ' ')
+          .trim();
+        if (answer.length > 500) answer = answer.slice(0, 497) + '...';
+        if (answer.length > 30) entries.push({ q: currentQ, a: answer });
+      }
+      buffer = [];
+    };
+
+    for (const line of lines) {
+      const h3 = line.match(/^###\s+(.+)$/);
+      const anyHeading = line.match(/^#{1,6}\s/);
+      if (h3) {
+        // Strip trailing {#anchor} if present
+        const heading = h3[1].replace(/\s*\{#[^}]+\}\s*$/, '').trim();
+        if (heading.endsWith('?')) {
+          flush();
+          currentQ = heading;
+          continue;
+        }
+      }
+      if (anyHeading) {
+        flush();
+        currentQ = null;
+      } else if (currentQ && line.trim() && !line.startsWith('|') && !line.startsWith('---')) {
+        buffer.push(line.trim());
+      }
+    }
+    flush();
+    return entries;
+  };
+
   const protocols = await getCollection('protocols', ({ data }) => !data.draft);
+  const contentDir = path.resolve('./src/content/protocols');
   return protocols.map(p => {
     const slug = p.id.replace(/\.md$/, '');
+    const filename = p.id.endsWith('.md') ? p.id : `${p.id}.md`;
+    let rawBody = '';
+    try {
+      const fileContent = fs.readFileSync(path.join(contentDir, filename), 'utf-8');
+      rawBody = fileContent.replace(/^---\n[\s\S]*?\n---\n/, '');
+    } catch (e) {
+      console.warn('[FAQ] Could not read', filename, String(e));
+    }
+    const faq = extractFaq(rawBody);
     return {
       params: { slug },
-      props: { protocol: p, slug },
+      props: { protocol: p, slug, faq },
     };
   });
 }
 
-const { protocol, slug } = Astro.props;
+const { protocol, slug, faq } = Astro.props;
 const { Content } = await render(protocol);
 const { title, tldr, tags, evidence, sources, sourceBreakdown, created, updated, verified, author, related } = protocol.data;
 ---
@@ -31,6 +88,7 @@ const { title, tldr, tags, evidence, sources, sourceBreakdown, created, updated,
   author={author}
   slug={slug}
   related={related}
+  faq={faq}
 >
   <Content />
 </Article>

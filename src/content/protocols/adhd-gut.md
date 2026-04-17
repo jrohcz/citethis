@@ -7,7 +7,7 @@ sourceBreakdown: "2 meta-analyses, 1 large prospective study (n=16,440), 4 RCTs,
 created: "2026-04-15"
 updated: "2026-04-15"
 verified: "2026-04-15"
-author: jroh.cz
+author: Jakub Roh
 tldr: "Gut dysbiosis at age 1 precedes ADHD diagnosis by years — the first prospective evidence for a causal microbiome→ADHD pathway (Ahrens et al., 2024, n=16,440). Adults with ADHD show reduced SCFA-producing bacteria and elevated inflammatory species. Stimulant medications may further reduce microbial diversity. Probiotics show modest benefit in RCTs (SMD ~0.24), optimal duration 8 weeks. A healthy Mediterranean-style diet outperformed elimination diets in the largest trial (51% vs 35% improvement). Prioritize diet over supplements; probiotics are adjunctive."
 ---
 

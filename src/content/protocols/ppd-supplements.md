@@ -6,7 +6,7 @@ sources: 47
 created: "2026-04-13"
 updated: "2026-04-13"
 verified: "2026-04-13"
-author: jroh.cz
+author: Jakub Roh
 sourceBreakdown: "2 meta-analyses, 7 RCTs, 9 observational studies, 29 supporting sources"
 tldr: "Systematic supplementation targeting nutrient deficiencies can significantly reduce PPD risk. Key interventions: omega-3 (EPA-dominant, 2-3g/day), ferritin optimization (>50 μg/L), vitamin D (4000-6000 IU), magnesium glycinate (300-600mg), and L. rhamnosus HN001 probiotic. A three-phase protocol (prenatal → critical postpartum → extended) addresses the neurobiological cascade triggered by postpartum hormone collapse."
 ---

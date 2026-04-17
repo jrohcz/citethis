@@ -8,7 +8,10 @@ export const GET: APIRoute = async () => {
   );
 
   const protocolLines = sorted
-    .map(p => `- [${p.data.title}](https://citethis.site/${p.slug}.md)`)
+    .map(p => {
+      const slug = p.id.replace(/\.md$/, '');
+      return `- [${p.data.title}](https://citethis.site/${slug}.md)`;
+    })
     .join('\n');
 
   const content = `# CiteThis

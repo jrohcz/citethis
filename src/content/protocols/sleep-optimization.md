@@ -6,7 +6,7 @@ sources: 12
 created: "2026-04-15"
 updated: "2026-04-15"
 verified: "2026-04-15"
-author: jroh.cz
+author: Jakub Roh
 sourceBreakdown: "3 meta-analyses, 8 RCTs, 2 observational/mechanistic, 4 supporting animal/mechanistic"
 tldr: "The strongest evidence-based sleep supplement stack centers on four compounds: Magnesium glycinate (300–400 mg, 60–90 min before bed) modulates GABA and lowers cortisol for deeper NREM; Glycine (3 g, 30–60 min before bed) reduces core body temperature via NMDA receptors in the SCN, shortening sleep latency and improving slow-wave sleep; L-Theanine (100–200 mg, 30–60 min before bed) induces alpha-wave activity for calm, non-sedating relaxation; and low-dose Melatonin (0.3–0.5 mg, 90–120 min before bed) resets circadian timing without grogginess. Apigenin (50 mg from chamomile extract) is a reasonable addition for anxiolytic GABA-A modulation, though most RCT evidence is for chamomile extract rather than isolated apigenin. Use this stack for sleep onset + deep sleep quality; morning refresh comes primarily from consistent sleep timing and avoiding high-dose melatonin."
 draft: false

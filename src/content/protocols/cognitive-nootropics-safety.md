@@ -1,12 +1,12 @@
 ---
 title: "Cognitive Enhancement: Safety-First Evidence-Based Nootropic Protocol"
-tags: [nootropics, cognitive-enhancement, alpha-GPC, NACET, magnesium, rhodiola, theanine, memory, focus, safety, bacopa, lions-mane, citicoline]
+tags: [nootropics, cognitive-enhancement, alpha-gpc, nacet, magnesium, rhodiola, theanine, memory, focus, safety, bacopa, lions-mane, citicoline]
 evidence: moderate
 sources: 18
 created: "2026-04-15"
 updated: "2026-04-15"
 verified: "2026-04-15"
-author: jroh.cz
+author: Jakub Roh
 sourceBreakdown: "3 meta-analyses/reviews, 11 RCTs, 2 observational/cohort, 2 animal/mechanistic (supporting)"
 tldr: "Evidence-based cognitive enhancement is achievable without high-risk compounds. The safety-first stack prioritizes compounds with ≥2 human RCTs, no significant dependency risk, and well-characterized safety profiles: L-Theanine + caffeine (gold standard for acute focus), Bacopa monnieri (12-week memory consolidation), Magnesium L-Threonate (sleep and synaptic plasticity), and Rhodiola rosea (anti-fatigue). Alpha-GPC and Citicoline are effective cholinergic precursors, with Citicoline preferred if TMAO concerns are relevant. NACET shows promise but lacks sufficient direct human RCT evidence to fully recommend — NAC's established evidence partially supports its use."
 draft: false

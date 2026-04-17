@@ -36,7 +36,7 @@
       "type": "string"
     },
     "author": {
-      "default": "jroh.cz",
+      "default": "Jakub Roh",
       "type": "string"
     },
     "tldr": {

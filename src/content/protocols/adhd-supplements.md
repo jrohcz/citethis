@@ -7,7 +7,7 @@ sourceBreakdown: "4 meta-analyses, 8 RCTs, 10 observational studies, 6 supportin
 created: "2026-04-15"
 updated: "2026-04-15"
 verified: "2026-04-15"
-author: jroh.cz
+author: Jakub Roh
 tldr: "Adults with ADHD show consistent deficits in iron (ferritin <30 ng/mL in 84%), vitamin D (6.5 ng/mL lower), zinc, and magnesium. Supplementing these deficiencies produces measurable symptom improvements — particularly ferritin optimization (target >50 ng/mL), vitamin D (4000 IU/day), and zinc (15–30mg). L-tyrosine shows no benefit and develops tolerance. Screen for deficiencies before supplementing; prioritize iron and vitamin D testing."
 ---
 

@@ -7,7 +7,7 @@ sourceBreakdown: "2 meta-analyses, 5 RCTs, 1 Delphi consensus, 8 mechanistic stu
 created: "2026-04-15"
 updated: "2026-04-15"
 verified: "2026-04-15"
-author: jroh.cz
+author: Jakub Roh
 tldr: "73–78% of adults with ADHD have delayed sleep-wake cycles with melatonin onset ~90 minutes later than controls. This isn't just comorbidity — emerging evidence frames ADHD as partly a circadian rhythm disorder. The Delphi consensus protocol: 0.5mg immediate-release melatonin taken 3 hours before habitual sleep onset, advancing by 1 hour weekly for 3–4 weeks. Counterintuitively, stimulant medications may improve (not worsen) sleep quality by reducing pre-sleep rumination."
 ---
 

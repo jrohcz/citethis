@@ -15,9 +15,10 @@ interface Props {
   author: string;
   slug: string;
   related?: string[];
+  faq?: Array<{ q: string; a: string }>;
 }
 
-const { title, tldr, tags, evidence, sources, sourceBreakdown, created, updated, verified, author, slug, related } = Astro.props;
+const { title, tldr, tags, evidence, sources, sourceBreakdown, created, updated, verified, author, slug, related, faq } = Astro.props;
 
 const evidenceLabels: Record<string, { label: string; score: string }> = {
   'strong': { label: 'Strong Evidence', score: '4/4' },
@@ -60,6 +61,18 @@ const schema = [
   "isAccessibleForFree": true,
   "usageInfo": "https://citethis.site/methodology"
   },
+  ...(faq && faq.length > 0 ? [{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faq.map(item => ({
+      "@type": "Question",
+      "name": item.q,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": item.a
+      }
+    }))
+  }] : []),
   {
     "@context": "https://schema.org",
     "@type": "Dataset",

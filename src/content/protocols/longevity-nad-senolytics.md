@@ -1,13 +1,13 @@
 ---
 title: "Longevity Supplement Stack: NAD+ Precursors & Senolytics Evidence Protocol"
-tags: [longevity, aging, NAD+, NMN, NR, fisetin, quercetin, senolytics, resveratrol, spermidine, GlyNAC, taurine, glycine]
+tags: [longevity, aging, nad+, nmn, nr, fisetin, quercetin, senolytics, resveratrol, spermidine, glynac, taurine, glycine]
 evidence: moderate
 sources: 19
 sourceBreakdown: "3 meta-analyses/systematic reviews, 6 human RCTs, 5 human observational/pilot studies, 5 animal/preclinical landmark studies"
 created: "2026-04-15"
 updated: "2026-04-15"
 verified: "2026-04-15"
-author: jroh.cz
+author: Jakub Roh
 tldr: "The strongest human evidence for longevity supplementation sits with NMN/NR (proven to raise NAD+ in blood; unclear if this translates to lifespan), GlyNAC (glycine + NAC, solid RCT data showing reversal of multiple aging hallmarks), and Taurine (declining with age in humans, though causal role unproven). Fisetin and Quercetin are promising senolytics in early-phase human trials only — not ready for confident recommendation. Resveratrol's sirtuin narrative has largely failed to replicate in humans. The honest bottom line: sleep, exercise, and diet likely outperform all of these supplements combined; the stack below is a reasonable low-risk addition for adults who understand the limitations."
 ---
 

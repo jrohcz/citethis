@@ -7,7 +7,7 @@ sourceBreakdown: "2 meta-analyses, 1 large survey (n=1,000), 4 registry/observat
 created: "2026-04-15"
 updated: "2026-04-15"
 verified: "2026-04-15"
-author: jroh.cz
+author: Jakub Roh
 tldr: "80.5% of women with ADHD report symptoms affected by hormonal changes; 68.2% worsen premenstrually, 55.9% during perimenopause. Women are diagnosed 3.5 years later on average, and 70% receive antidepressants before any ADHD diagnosis. The estrogen-dopamine axis explains cyclical symptom fluctuations: high estrogen (follicular phase) improves dopamine signaling, low estrogen (late luteal, postpartum, menopause) worsens ADHD. Evidence for cyclical medication adjustment is preliminary but 70% of women who self-adjusted reported benefit."
 ---
 

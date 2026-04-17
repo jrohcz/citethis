@@ -1,12 +1,12 @@
 ---
 title: "Brain Fog & Postpartum Cognitive Recovery: Evidence-Based Support Protocol"
-tags: [brain-fog, postpartum, cognition, DHA, magnesium-threonate, b-vitamins, lions-mane, memory, focus, choline, sleep-deprivation, neuroplasticity]
+tags: [brain-fog, postpartum, cognition, dha, magnesium-threonate, b-vitamins, lions-mane, memory, focus, choline, sleep-deprivation, neuroplasticity]
 evidence: moderate
 sources: 16
 created: "2026-04-15"
 updated: "2026-04-15"
 verified: "2026-04-15"
-author: jroh.cz
+author: Jakub Roh
 sourceBreakdown: "3 meta-analyses/systematic reviews, 7 RCTs, 4 observational/longitudinal, 4 supporting (mechanistic/review)"
 tldr: "Postpartum brain fog is neurobiologically real — pregnancy reshapes gray matter in regions governing social cognition, and these changes persist for at least two years (Hoekzema et al., 2017). Unlike PPD (where EPA-dominant omega-3 and mood support are primary), cognitive recovery emphasizes DHA repletion for structural brain support, Magnesium L-Threonate for synaptic plasticity, and B-vitamins to restore the methylation cycle depleted by pregnancy. Sleep deprivation is the #1 driver of postpartum cognitive impairment — supplements support recovery but cannot substitute for sleep intervention. Meaningful cognitive improvement typically emerges at 6–12 weeks with consistent DHA + MgT supplementation alongside sleep optimization."
 draft: false

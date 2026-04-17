@@ -6,7 +6,7 @@ sources: 16
 created: "2026-04-15"
 updated: "2026-04-15"
 verified: "2026-04-15"
-author: jroh.cz
+author: Jakub Roh
 sourceBreakdown: "4 meta-analyses/systematic reviews, 6 RCTs/clinical trials, 4 observational/cohort, 2 supporting reviews"
 tldr: "For women unwilling or unable to use HRT, a targeted nutraceutical stack — anchored by magnesium bisglycinate, omega-3 fatty acids, and vitamin D3+K2 — offers moderate evidence for reducing vasomotor symptoms, improving sleep quality, and stabilizing mood during the menopausal transition. Maca (Lepidium meyenii) shows promising evidence for FSH/LH modulation and hot flash reduction, particularly in early postmenopausal women. DIM (diindolylmethane) may support favorable estrogen metabolism ratios but direct symptom evidence remains limited; it requires caution in women with estrogen-sensitive conditions. No supplement replaces HRT for severe vasomotor symptoms — be honest about that limit."
 draft: false
