@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "tag": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "quickFacts": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "$schema": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "tag",
+    "name"
+  ]
+}

@@ -139,6 +139,14 @@ declare module 'astro:content' {
   rendered?: RenderedContent;
   filePath?: string;
 }>;
+"tagExplainers": Record<string, {
+  id: string;
+  body?: string;
+  collection: "tagExplainers";
+  data: InferEntrySchema<"tagExplainers">;
+  rendered?: RenderedContent;
+  filePath?: string;
+}>;
 
 	};
 

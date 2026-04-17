@@ -1,21 +1,27 @@
 ---
-import { getCollection } from 'astro:content';
+import { getCollection, render } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 
 export async function getStaticPaths() {
   const protocols = await getCollection('protocols', ({ data }) => !data.draft);
+  const explainers = await getCollection('tagExplainers');
   const tagSet = new Set(protocols.flatMap(p => p.data.tags));
 
-  return Array.from(tagSet).map(tag => ({
-    params: { tag },
-    props: {
-      tag,
-      protocols: protocols.filter(p => p.data.tags.includes(tag)),
-    },
-  }));
+  return Array.from(tagSet).map(tag => {
+    const explainer = explainers.find(e => e.data.tag === tag);
+    return {
+      params: { tag },
+      props: {
+        tag,
+        protocols: protocols.filter(p => p.data.tags.includes(tag)),
+        explainer,
+      },
+    };
+  });
 }
 
-const { tag, protocols } = Astro.props;
+const { tag, protocols, explainer } = Astro.props;
+const ExplainerContent = explainer ? (await render(explainer)).Content : null;
 const sorted = [...protocols].sort((a: any, b: any) =>
   new Date(b.data.updated).getTime() - new Date(a.data.updated).getTime()
 );
@@ -38,18 +44,41 @@ const relatedTags = Object.entries(relatedTagFreq)
   .slice(0, 6)
   .map(([t]) => t);
 
-const schema = {
-  "@context": "https://schema.org",
-  "@type": "CollectionPage",
-  "name": `#${tag} — CiteThis`,
-  "description": `Evidence-based protocols tagged with #${tag}`,
-  "url": `https://citethis.site/tags/${tag}`,
-};
+const tagDisplayName = explainer?.data.name ?? `#${tag}`;
+const tagDescription = explainer
+  ? `${explainer.data.name}: evidence-based overview and ${sorted.length} related protocol${sorted.length !== 1 ? 's' : ''} on CiteThis.`
+  : `Evidence-based protocols tagged with #${tag}`;
+
+const schema: any[] = [
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": `${tagDisplayName} — CiteThis`,
+    "description": tagDescription,
+    "url": `https://citethis.site/tags/${tag}`,
+  },
+];
+
+if (explainer) {
+  schema.push({
+    "@context": "https://schema.org",
+    "@type": "DefinedTerm",
+    "name": explainer.data.name,
+    "alternateName": tag,
+    "description": tagDescription,
+    "url": `https://citethis.site/tags/${tag}`,
+    "inDefinedTermSet": {
+      "@type": "DefinedTermSet",
+      "name": "CiteThis Topics",
+      "url": "https://citethis.site/"
+    }
+  });
+}
 ---
 
 <Base
-  title={`#${tag}`}
-  description={`Evidence-based protocols tagged with #${tag}. ${sorted.length} protocol${sorted.length !== 1 ? 's' : ''} available.`}
+  title={tagDisplayName}
+  description={tagDescription}
   schema={schema}
 >
   <div style="margin-bottom: 2.5rem;">
@@ -57,12 +86,39 @@ const schema = {
       <a href="/" style="color: var(--text-muted); text-decoration: none;">CiteThis</a> / tags
     </p>
     <h1 style="font-size: 2.5rem; font-weight: 900; letter-spacing: -0.025em; margin-bottom: 0.5rem; color: var(--text);">
-      #{tag}
+      {explainer ? explainer.data.name : `#${tag}`}
     </h1>
+    {explainer && (
+      <p style="font-family: monospace; font-size: 0.75rem; color: var(--text-muted); margin-bottom: 0.5rem;">
+        #{tag}
+      </p>
+    )}
     <p style="font-size: 0.875rem; color: var(--text-muted);">
       {sorted.length} protocol{sorted.length !== 1 ? 's' : ''}
     </p>
   </div>
+
+  {explainer && ExplainerContent && (
+    <div style="margin-bottom: 3rem;">
+      {explainer.data.quickFacts && explainer.data.quickFacts.length > 0 && (
+        <div style="padding: 1rem; margin-bottom: 1.5rem; border: 1px solid var(--border); background-color: var(--tag-bg);">
+          <div style="font-family: monospace; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.75rem; color: var(--text-muted);">Quick Facts</div>
+          <ul style="list-style: none; padding: 0; margin: 0;">
+            {explainer.data.quickFacts.map(fact => (
+              <li style="font-size: 0.875rem; line-height: 1.6; padding: 0.25rem 0; color: var(--text);">• {fact}</li>
+            ))}
+          </ul>
+        </div>
+      )}
+      <div class="prose" style="max-width: none;">
+        <ExplainerContent />
+      </div>
+    </div>
+  )}
+
+  <h2 style="font-family: monospace; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 1rem; color: var(--text-muted);">
+    Protocols
+  </h2>
 
   <div style="border-top: 1px solid var(--border); margin-bottom: 3rem;">
     {sorted.map((protocol: any) => {

@@ -20,4 +20,13 @@ const protocols = defineCollection({
   }),
 });
 
-export const collections = { protocols };
+const tagExplainers = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/tag-explainers' }),
+  schema: z.object({
+    tag: z.string(),
+    name: z.string(),
+    quickFacts: z.array(z.string()).optional(),
+  }),
+});
+
+export const collections = { protocols, tagExplainers };
