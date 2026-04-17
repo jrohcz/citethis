@@ -18,6 +18,24 @@ draft: false
 
 ---
 
+## Frequently Asked Questions
+
+### Which nootropics are actually safe for long-term daily use?
+
+Only Tier 1 compounds in our safety framework qualify: creatine monohydrate (5g/day, decades of safety data), L-theanine (200-400mg, excellent safety profile), caffeine in moderation (<400mg/day), and omega-3 EPA/DHA. These have 12+ months of human safety data at recommended doses. Most "popular" nootropics (racetams, noopept, phenibut) lack this evidence and some carry documented dependence or withdrawal risks.
+
+### Is alpha-GPC safe?
+
+Conditionally. Alpha-GPC shows cognitive benefit in RCTs but a 2021 observational study (Lee et al.) found a 46% increased stroke risk over 10 years in users. Causality is unproven (confounding by indication — people with cognitive decline may be both more likely to take alpha-GPC and more likely to stroke), but the signal exists. We recommend limiting alpha-GPC to short-term use (<8 weeks) or avoiding it entirely in individuals with cardiovascular risk factors.
+
+### What's the difference between magnesium threonate and other forms for cognition?
+
+Magnesium L-threonate is the only form demonstrated to cross the blood-brain barrier and elevate CSF magnesium levels in humans (Liu et al., 2016 animal data; subsequent human trials). Other forms (glycinate, citrate, malate) are better absorbed than oxide but don't preferentially enter the CNS. For cognitive indications specifically, threonate at 1,500-2,000mg daily is preferred; for sleep, anxiety, or general magnesium repletion, glycinate is superior.
+
+### Can I combine multiple nootropics safely?
+
+Some combinations are well-supported (L-theanine + caffeine 2:1, creatine + omega-3). Others are risky (stacking cholinergics like alpha-GPC + CDP-choline + lion's mane may cause headaches or depression from cholinergic excess). Our protocol recommends starting with Tier 1 monotherapy for 4-6 weeks before adding additional compounds, one at a time, with 4-week evaluation periods. "Stacks" marketed commercially often lack individual compound testing and should be avoided.
+
 ## Methodology Note
 
 This synthesis reviews 18 primary sources: 3 meta-analyses/reviews on nootropic efficacy and safety, 11 RCTs covering lion's mane, citicoline, phosphatidylserine, creatine, and L-theanine, 2 observational/cohort studies, and 2 mechanistic/animal studies used only where human data was absent. We applied a safety-first filter: compounds with unresolved long-term safety signals (racetams, noopept, modafinil off-label) were documented but not recommended. We prioritized compounds with established human pharmacokinetics and 12+ week safety data. Full methodology: [/methodology](/methodology)

@@ -12,6 +12,24 @@ tldr: "For women unwilling or unable to use HRT, a targeted nutraceutical stack 
 draft: false
 ---
 
+## Frequently Asked Questions
+
+### Is this protocol an alternative to HRT?
+
+No. Hormone replacement therapy remains the most effective intervention for vasomotor symptoms (hot flashes, night sweats) with effect sizes 2-3x higher than any non-hormonal intervention reviewed here. This protocol is designed for women who decline HRT, have contraindications (e.g., breast cancer history, active thromboembolic disease), or seek adjunct support alongside HRT. Head-to-head data suggest non-hormonal interventions achieve approximately 40-60% of HRT's symptom reduction.
+
+### Does black cohosh actually work for hot flashes?
+
+Mixed evidence. Meta-analyses show modest benefit (approximately 26% reduction in vasomotor symptoms vs. 15-20% placebo response) but not all RCTs are positive. Effects take 4-8 weeks to manifest. Use standardized extracts (Remifemin is the most studied formulation, 20-40mg daily) rather than generic powder. Liver enzyme monitoring is recommended for courses exceeding 6 months due to rare hepatotoxicity signals, though a causal link remains unconfirmed.
+
+### Can diet alone manage perimenopause symptoms?
+
+For some women, yes — particularly those with mild symptoms. Mediterranean-style diet patterns rich in phytoestrogens (soy isoflavones, flaxseed lignans), omega-3 fatty acids, and adequate calcium/vitamin D correlate with reduced symptom severity in cohort studies. However, for moderate-to-severe vasomotor symptoms, dietary intervention alone is typically insufficient and should be combined with targeted supplementation or HRT consideration.
+
+### Why does this protocol include vitamin D specifically?
+
+Perimenopause coincides with accelerated bone loss (2-4% annually in the 2 years before and after final menstrual period), and vitamin D is essential for calcium absorption and bone mineral density maintenance. Target 25-OH vitamin D >30 ng/mL (75 nmol/L) via D3 supplementation at 2000-4000 IU daily, paired with vitamin K2 (MK-7, 100-200mcg) to direct calcium to bone rather than arterial tissue.
+
 ## Methodology Note
 
 Our synthesis covers 16 primary sources: 4 meta-analyses/systematic reviews on non-hormonal menopause interventions, 6 RCTs/clinical trials on isoflavones, black cohosh, and vitamin E, 4 observational/cohort studies on symptom prevalence and intervention adherence, and 2 supporting reviews. **Scope boundary:** this protocol is for women declining or contraindicated for HRT, or seeking adjunct support. It is not positioned as HRT-equivalent. We explicitly quantify effect sizes vs. HRT where head-to-head data exist (typically 40-60% of HRT efficacy for vasomotor symptoms). Full methodology: [/methodology](/methodology)

@@ -12,6 +12,24 @@ tldr: "The strongest evidence-based sleep supplement stack centers on four compo
 draft: false
 ---
 
+## Frequently Asked Questions
+
+### Is melatonin safe for nightly long-term use?
+
+At low doses (0.3-0.5mg), yes — evidence supports multi-year use without tolerance or dependence. At high doses (3-10mg commonly sold OTC), chronic use can suppress endogenous melatonin production and cause morning grogginess. Most commercial melatonin products are 10-30x higher than physiologically optimal. Use immediate-release 0.3-0.5mg taken 30-60 minutes before intended sleep time for sleep onset, or 3-5 hours before for circadian phase advance.
+
+### Which magnesium is best for sleep?
+
+Magnesium glycinate (300-400mg elemental) has the strongest evidence for sleep onset and quality — glycine itself is a calming neurotransmitter, so this form delivers dual mechanism. Magnesium L-threonate crosses the blood-brain barrier better but is optimized for cognition, not sleep. Magnesium oxide is poorly absorbed and primarily a laxative. Avoid magnesium citrate for sleep unless constipation is a secondary goal.
+
+### Does apigenin actually improve sleep?
+
+Limited direct evidence, but mechanistically plausible. Apigenin (found in chamomile and parsley, supplemented at 50mg pre-bed) binds GABA-A receptors and has shown sleep-promoting effects in animal models and small human trials. The evidence base is weaker than melatonin or magnesium, so we position apigenin as a secondary intervention for individuals who don't respond to first-line options.
+
+### How long until supplements improve sleep?
+
+Depends on mechanism. Acute agents (melatonin, L-theanine 200mg, apigenin) act within 30-60 minutes for sleep onset. Chronic agents targeting sleep architecture (magnesium glycinate, glycine 3g) require 2-4 weeks of consistent nightly use for measurable improvement in sleep quality metrics. Avoid rotating supplements faster than 4 weeks — you'll misattribute null effects to compounds that simply haven't had time to work.
+
 ## Methodology Note
 
 Our synthesis draws on 12 primary sources: 3 meta-analyses on melatonin, magnesium, and glycine for sleep, 8 RCTs covering apigenin, L-theanine, GABA, and magnesium threonate, 2 observational/mechanistic studies, and 4 supporting animal/mechanistic references used only where human data was sparse. **Critical distinction applied throughout:** we separate "sleep onset" interventions (acting within 30-60 minutes — e.g., melatonin 0.3mg, L-theanine 200mg) from "sleep architecture" interventions (acting over 2-4 weeks — e.g., magnesium glycinate, glycine 3g). Each compound's dose includes timing and expected-onset window. Full methodology: [/methodology](/methodology)

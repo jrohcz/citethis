@@ -32,6 +32,24 @@ Our analysis of 28 primary sources reveals the following core findings, each dra
 - **L-tyrosine develops tolerance within 6 weeks** — all 8 initial responders lost benefit (Reimherr et al., 1987)
 - **Czech-specific:** Only 19.2% of Czech youth have sufficient vitamin D (≥75 nmol/L); 51.5% never supplement (Holmannová et al., 2025)
 
+## Frequently Asked Questions
+
+### Which single supplement has the strongest evidence for ADHD in adults?
+
+Iron (ferritin optimization) has the most robust evidence for adult ADHD where a deficiency exists. Studies show 84% of ADHD children have ferritin below 30 ng/mL, and ferritin inversely correlates with symptom severity (r = −0.34, Konofal et al., 2004). Target ferritin >50 ng/mL via iron bisglycinate (25-65mg elemental). Critically, this only helps if a deficiency is present — screen first with serum ferritin and transferrin saturation before supplementing.
+
+### Do supplements work as well as stimulant medication?
+
+No. Stimulants (methylphenidate, lisdexamfetamine) produce effect sizes of approximately SMD 0.7-1.0 for core ADHD symptoms; supplementation of measured deficiencies produces SMD 0.3-0.6. Supplements are adjuncts to evidence-based treatment, not replacements. The one scenario where supplementation shows comparable effect is severe iron deficiency, where repletion alone may reduce symptoms substantially.
+
+### Why does omega-3 require 4+ months to work?
+
+Omega-3 incorporates into neuronal membrane phospholipids over 3-4 months, reaching steady-state concentrations that alter membrane fluidity and neurotransmitter receptor function. The Chang et al. (2023) meta-analysis shows SMD −0.35 only with intervention durations ≥4 months; shorter trials show null effects not because omega-3 fails but because tissue concentrations have not yet changed. Target EPA-dominant formulas (EPA:DHA ≥2:1) at 1-2g EPA daily.
+
+### Should I supplement everything on this list at once?
+
+No. Our protocol uses a sequential approach: test biomarkers first (ferritin, 25-OH vitamin D, CBC, magnesium RBC), supplement only measured deficiencies for 8-12 weeks, then reassess. Stacking untested supplements obscures which intervention works and increases risk of interactions (e.g., zinc-copper competition, high-dose iron GI effects). Cost-effectiveness also favors targeted repletion.
+
 ## Methodology Note
 
 This protocol synthesizes findings from 28 primary sources including meta-analyses on iron (Tseng et al., 2018), vitamin D (2025 meta-analysis), zinc (Talebi et al., 2022), and omega-3 (Chang et al., 2023), alongside RCTs on specific interventions. We prioritized supplements with established mechanisms in dopamine synthesis and meta-analytic evidence. L-tyrosine was included specifically to document lack of evidence. Full methodology: [/methodology](/methodology)

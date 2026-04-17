@@ -45,6 +45,24 @@ Our analysis of 22 primary sources reveals the following core findings, each dra
 
 ---
 
+## Frequently Asked Questions
+
+### Can nutraceuticals replace antidepressant medication?
+
+No. This protocol is explicitly an adjunct to evidence-based treatment (SSRIs, SNRIs, psychotherapy), not a replacement. The strongest adjunct evidence comes from combining nutraceuticals with existing pharmacotherapy, not from using them as monotherapy in moderate-to-severe depression. For mild symptoms, some nutraceuticals (e.g., saffron, SAM-e) show efficacy approaching SSRIs in RCTs, but severity assessment and professional diagnosis remain prerequisites.
+
+### Which nutraceutical has the strongest head-to-head evidence vs. SSRIs?
+
+Saffron (Crocus sativus) 30mg/day (standardized extract, typically affron or Satiereal) shows non-inferiority to fluoxetine and imipramine in multiple RCTs for mild-to-moderate depression. Effect sizes are comparable (SMD approximately 0.5-0.9) with substantially lower side effect burden. However, trials are typically 6-8 weeks and use standardized extracts; generic saffron powder cannot be assumed equivalent.
+
+### Does omega-3 work for all types of depression?
+
+No. The active component is EPA, not DHA. Meta-analyses show EPA-dominant formulas (EPA ≥60% of total omega-3) at 1-2g EPA daily produce clinically meaningful effects (SMD approximately −0.5 for major depression). DHA-dominant formulas show null or paradoxical effects. Omega-3 is also most effective for depression with elevated inflammatory markers (hs-CRP >3 mg/L); non-inflammatory depression responds less reliably.
+
+### Are there nutraceutical combinations that are dangerous?
+
+Yes. SAM-e can precipitate mania in bipolar depression and should not combine with MAOIs. L-methylfolate can unmask bipolar disorder. St. John's Wort (not included in this protocol for this reason) induces CYP3A4 and reduces serum levels of many drugs including contraceptives and SSRIs. Our protocol excludes high-interaction-risk compounds and emphasizes screening for bipolar spectrum disorders before initiating folate-based interventions.
+
 ## Methodology Note
 
 This protocol synthesizes evidence from **8 meta-analyses, 10 RCTs, 2 observational studies, and 2 mechanistic/supporting papers** (total: 22 sources). Priority was given to: (1) RCTs specifically testing adjunctive use alongside standard antidepressants; (2) meta-analyses with ≥4 included trials; (3) studies using validated scales (HAM-D, HDRS, PHQ-9, GAD-7, MADRS). Studies in healthy populations or animal models are noted but not used as primary evidence. For methodology details, see [/methodology]. No citations were fabricated; where DOI was uncertain, PMID is provided instead.

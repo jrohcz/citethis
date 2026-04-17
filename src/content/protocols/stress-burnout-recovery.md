@@ -12,6 +12,24 @@ tldr: "Burnout and chronic stress are distinct from acute stress and require fun
 draft: false
 ---
 
+## Frequently Asked Questions
+
+### What's the difference between stress and burnout?
+
+Operationally, burnout requires three criteria per the Maslach Burnout Inventory (Maslach et al., 1981): emotional exhaustion, depersonalization/cynicism, and reduced personal accomplishment, typically with occupational origin and 6+ month duration. Stress is acute or chronic physiological/psychological activation without these structural features. The distinction matters for intervention: acute stress responds to adaptogens and behavioral change within 2-4 weeks; burnout requires 8-12 weeks of recovery plus environmental modification.
+
+### Does ashwagandha really lower cortisol?
+
+Yes, with caveats. KSM-66 ashwagandha extract (standardized to 5% withanolides, 300-600mg daily) reduces serum cortisol by approximately 15-30% in chronic stress populations in RCTs (Chandrasekhar et al., 2012 and subsequent trials). The effect is most pronounced in individuals with elevated baseline cortisol; normocortisolemic individuals show minimal change. Avoid ashwagandha in hyperthyroidism (it stimulates thyroid function) and pregnancy.
+
+### Can adaptogens replace therapy for burnout?
+
+No. Adaptogens modulate HPA-axis physiology but do not address the environmental/occupational factors driving burnout. The most robust burnout recovery data support multimodal intervention: adaptogens or targeted supplements for physiological support, plus workload reduction, psychotherapy (particularly CBT), and sleep regulation. Expecting supplements alone to resolve burnout without addressing its source is a well-documented failure pattern in the occupational health literature.
+
+### Is rhodiola safer than ashwagandha?
+
+Different safety profiles, not clearly safer. Rhodiola rosea (SHR-5 extract, 200-400mg daily) acts more quickly than ashwagandha (often within 1-2 weeks) but can precipitate mania in bipolar individuals and should be avoided with MAOIs. Ashwagandha works over 4-8 weeks with different contraindications (hyperthyroidism, autoimmune conditions). Neither has long-term safety data beyond 12 months of continuous use; cyclical use (8 weeks on, 2-4 weeks off) is prudent.
+
 ## Methodology Note
 
 Our review synthesizes 15 primary sources: 2 meta-analyses on adaptogenic herbs and HPA-axis modulation, 10 RCTs covering ashwagandha (Chandrasekhar et al.), rhodiola, Panax ginseng, magnesium, and phosphatidylserine, 2 observational/open-label trials, and 1 supporting mechanistic study (Kimura et al., 2007 on L-theanine and cortisol). **Diagnostic distinction applied:** we separate operational "burnout" (Maslach Burnout Inventory criteria, Maslach et al., 1981) from general "stress" because intervention response differs — burnout requires longer recovery cycles (8-12 weeks) than acute stress (2-4 weeks). Full methodology: [/methodology](/methodology)

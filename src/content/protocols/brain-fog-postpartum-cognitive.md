@@ -12,6 +12,24 @@ tldr: "Postpartum brain fog is neurobiologically real — pregnancy reshapes gra
 draft: false
 ---
 
+## Frequently Asked Questions
+
+### Is postpartum brain fog permanent?
+
+No. The Hoekzema et al. (2017) landmark study shows structural brain changes in pregnancy represent reorganization rather than loss, with gray matter volume partially recovering over 1-2 years postpartum. Cognitive symptoms typically peak in the first 3-6 months and resolve substantially by month 12, though full recovery can take up to 24 months. Persistent symptoms beyond this window warrant evaluation for underlying causes including thyroid dysfunction, iron deficiency anemia, or postpartum depression.
+
+### How is postpartum brain fog different from postpartum depression?
+
+Brain fog is primarily cognitive (memory lapses, word-finding difficulty, slowed processing) without the core affective symptoms of depression (anhedonia, persistent low mood, hopelessness). The two can co-occur, and PPD frequently presents with cognitive symptoms, but brain fog without mood disturbance is typically a distinct physiological phenomenon driven by sleep deprivation, hormonal transition, and nutrient depletion. Screen for PPD using validated instruments (EPDS, PHQ-9) before attributing symptoms to brain fog alone.
+
+### Is lion's mane safe during breastfeeding?
+
+Limited data. We conditionally include lion's mane (Hericium erinaceus) because small RCTs show cognitive benefit, but no lactation safety studies exist. Mechanistically it appears low-risk, but we recommend delaying initiation until after breastfeeding ends if the mother is risk-averse, or using it only after consultation with a healthcare provider. Omega-3 DHA and choline are substantially better supported for breastfeeding populations.
+
+### Does choline really help postpartum cognition?
+
+Evidence is mechanistic rather than directly interventional for postpartum cognition specifically. However, 90-95% of women do not meet the 550mg daily intake recommendation during lactation, and choline is the precursor to acetylcholine (critical for memory) and phosphatidylcholine (critical for myelin). Supplementation to adequate intake levels (550-930mg) is low-risk and addresses a documented deficiency in this population.
+
 ## Methodology Note
 
 Our synthesis draws on 16 primary sources: 3 meta-analyses/systematic reviews on postpartum cognitive recovery, 7 RCTs covering omega-3, iron, vitamin D, and choline interventions, 4 observational/longitudinal studies including Hoekzema et al. (2017) on structural brain changes in pregnancy, and 4 supporting mechanistic reviews. We prioritized evidence with direct postpartum cognitive outcomes over extrapolations from non-postpartum populations. Where RCT evidence was absent, we explicitly flagged mechanistic reasoning vs. human trial data. Full methodology: [/methodology](/methodology)

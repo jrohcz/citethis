@@ -12,6 +12,24 @@ tldr: "The gut-brain axis is a real, bidirectional communication system — but 
 draft: false
 ---
 
+## Frequently Asked Questions
+
+### Does "the microbiome" cause depression and anxiety?
+
+Partially. The gut-brain axis bidirectionally influences mood via vagus nerve signaling, short-chain fatty acid (SCFA) production, tryptophan/serotonin metabolism, and immune/HPA-axis modulation. However, causality is probabilistic, not deterministic: gut dysbiosis contributes to mood disorders in some individuals but is neither necessary nor sufficient. Landmark work (Bravo et al., 2011) showed vagotomy abolishes probiotic anxiolytic effects in mice, confirming the pathway but also its reversibility.
+
+### Which probiotic strain has the strongest human evidence for mood?
+
+L. rhamnosus HN001 (perinatal anxiety/depression, OR 0.44 — Slykerman et al., 2017) and B. longum NCC3001 (IBS-related depression with fMRI-confirmed CNS changes — Pinto-Sanchez et al., 2017) have the strongest strain-specific evidence. Critically, these are specific strains with specific clinical trial IDs, not interchangeable with generic "L. rhamnosus" or "B. longum" products. Strain specificity is the field's largest replication problem.
+
+### Are multi-strain probiotics better than single-strain?
+
+Not automatically. Multi-strain formulas show benefit in some indications (Ecologic Barrier 825 for depression in Steenbergen et al., 2015) but combining arbitrary strains does not multiply benefits. Each strain has unique effects, and interactions between strains are poorly characterized. Use specific validated formulations (identified by strain ID + CFU count) rather than "broad-spectrum" marketing claims.
+
+### Can I get the same benefit from fermented foods?
+
+Partially and indirectly. Fermented foods (yogurt, kefir, sauerkraut, kimchi) provide diverse microbial exposure and support gut barrier integrity, which correlates with improved mood markers (Berding et al., 2023). However, clinical trial effects for specific mood disorders use isolated strains at precisely defined CFU counts, which fermented foods cannot reliably match. Use both: fermented foods as dietary foundation, specific probiotics for targeted clinical indications.
+
 ## Methodology Note
 
 Our synthesis draws on 7 primary sources plus supporting reviews: 4 meta-analyses/systematic reviews on psychobiotics and mood, 5 RCTs with strain-specific interventions (L. rhamnosus HN001, B. longum NCC3001, multi-strain combinations), 3 observational/mechanistic studies including Bravo et al. (2011) on vagal signaling, and 4 supporting reviews. **Critical methodological stance:** we refused to extrapolate between bacterial strains even within the same species, because strain-specificity is the field's largest replication problem. We cite specific strain names with manufacturer/clinical trial IDs where available. Full methodology: [/methodology](/methodology)

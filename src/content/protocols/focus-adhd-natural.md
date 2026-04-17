@@ -12,6 +12,24 @@ tldr: "Natural interventions for attention and focus show modest but real effect
 draft: false
 ---
 
+## Frequently Asked Questions
+
+### Can natural supplements replace ADHD stimulant medication?
+
+No. Stimulant medications (methylphenidate, lisdexamfetamine) produce effect sizes of approximately SMD 0.7-1.0 in diagnosed ADHD; natural interventions reviewed here show SMD 0.2-0.4 at best, and only for subclinical attention symptoms without formal diagnosis. If you have diagnosed ADHD, see our [ADHD Supplement Stack](/adhd-supplements) protocol which positions supplements as adjuncts to first-line pharmacotherapy.
+
+### Which natural compound has the strongest evidence for focus without ADHD?
+
+L-theanine combined with caffeine (200mg theanine + 100mg caffeine) has the most robust RCT evidence for attention and alertness in healthy adults, with effect sizes SMD approximately 0.3-0.5 in attention tasks. This combination is also the safest profile: L-theanine appears to blunt caffeine's anxiogenic effects while preserving alertness benefits.
+
+### Does bacopa monnieri really improve memory?
+
+Yes, but slowly. Bacopa (300mg standardized extract daily) shows cognitive enhancement in meta-analyses, but effects require 8-12 weeks of continuous use to manifest. Unlike caffeine or L-theanine (acute effects within hours), bacopa requires consistent daily dosing for membrane stabilization and BDNF modulation to reach therapeutic thresholds. Expect no noticeable effect before week 6-8.
+
+### Is rhodiola rosea effective for mental fatigue?
+
+Moderate evidence. Rhodiola (200-400mg standardized to 3% rosavins, 1% salidroside) shows effect in fatigue-related attention deficits with SMD approximately 0.4 in 8-week RCTs. It works best for stress-induced cognitive symptoms rather than primary attention deficits. Avoid if you have bipolar disorder (risk of mania induction) or are taking MAOIs.
+
 ## Methodology Note
 
 Our review synthesizes 10 primary sources: 2 meta-analyses on omega-3 and zinc in ADHD-like symptoms, 6 RCTs (Lyon et al., 2011 on Pycnogenol; Nikoo et al., 2015 on saffron; others on ginkgo, bacopa, rhodiola), 2 observational/review studies, and 5 supporting mechanistic references. **Critical scope note:** this protocol addresses subclinical attention/focus symptoms in adults without formal ADHD diagnosis. Individuals with diagnosed ADHD should refer to our separate [ADHD Supplement Stack](/adhd-supplements) protocol, which prioritizes stimulant medication as first-line. Full methodology: [/methodology](/methodology)
