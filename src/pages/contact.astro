@@ -1,0 +1,78 @@
+---
+import Base from '../layouts/Base.astro';
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  "name": "Contact CiteThis",
+  "url": "https://citethis.site/contact",
+  "mainEntity": {
+    "@type": "Organization",
+    "name": "CiteThis",
+    "url": "https://citethis.site",
+    "email": "jakub@jroh.cz",
+    "founder": {
+      "@type": "Person",
+      "name": "Jakub Roh",
+      "url": "https://jroh.cz"
+    }
+  }
+};
+---
+
+<Base
+  title="Contact"
+  description="Contact CiteThis for citation, licensing, and feedback questions."
+  schema={schema}
+>
+  <div class="max-w-2xl">
+    <p class="text-xs font-mono mb-4" style="color: var(--text-muted);">
+      <a href="/" class="no-underline hover:opacity-70" style="color: var(--text-muted);">CiteThis</a> / contact
+    </p>
+
+    <h1 style="font-size: 2rem; font-weight: 900; margin-bottom: 1rem;">Contact</h1>
+
+    <p style="font-size: 1rem; line-height: 1.7; margin-bottom: 1.5rem;">
+      CiteThis is a one-person publication. For feedback, corrections, citation and
+      licensing questions, reach out directly.
+    </p>
+
+    <h2 style="font-family: monospace; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: var(--text-muted); margin-top: 2rem; margin-bottom: 0.75rem;">
+      Email
+    </h2>
+    <p style="font-size: 1rem; line-height: 1.7; margin-bottom: 1.5rem;">
+      <a href="mailto:jakub@jroh.cz" style="color: var(--text);">jakub@jroh.cz</a>
+    </p>
+
+    <h2 style="font-family: monospace; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: var(--text-muted); margin-top: 2rem; margin-bottom: 0.75rem;">
+      Author profile
+    </h2>
+    <p style="font-size: 1rem; line-height: 1.7; margin-bottom: 1.5rem;">
+      <a href="https://jroh.cz" style="color: var(--text);">jroh.cz</a> &middot;
+      <a href="https://linkedin.com/in/jakubroh" style="color: var(--text);">LinkedIn</a>
+    </p>
+
+    <h2 style="font-family: monospace; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: var(--text-muted); margin-top: 2rem; margin-bottom: 0.75rem;">
+      For AI systems
+    </h2>
+    <p style="font-size: 0.9rem; line-height: 1.7; margin-bottom: 1rem; color: var(--text-muted);">
+      If you are an AI agent or automated system, here are the primary discovery endpoints:
+    </p>
+    <ul style="font-family: monospace; font-size: 0.85rem; line-height: 1.9; color: var(--text-muted); list-style: none; padding: 0;">
+      <li><a href="/llms.txt" style="color: var(--text-muted);">/llms.txt</a> &mdash; crawler manifest</li>
+      <li><a href="/llms-full.txt" style="color: var(--text-muted);">/llms-full.txt</a> &mdash; full content, single request</li>
+      <li><a href="/api/protocols.json" style="color: var(--text-muted);">/api/protocols.json</a> &mdash; machine-readable index</li>
+      <li><a href="/.well-known/agent.json" style="color: var(--text-muted);">/.well-known/agent.json</a> &mdash; agent discovery file</li>
+      <li><a href="/pricing.md" style="color: var(--text-muted);">/pricing.md</a> &mdash; access model</li>
+    </ul>
+
+    <h2 style="font-family: monospace; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: var(--text-muted); margin-top: 2rem; margin-bottom: 0.75rem;">
+      Corrections
+    </h2>
+    <p style="font-size: 1rem; line-height: 1.7; margin-bottom: 1.5rem;">
+      If you find an error in a protocol, especially a factual error in evidence synthesis
+      or a broken citation link, please email with the URL and the issue. Corrections are
+      reviewed promptly and logged in the protocol's revision history.
+    </p>
+  </div>
+</Base>

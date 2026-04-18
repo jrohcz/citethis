@@ -1,0 +1,25 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "CiteThis",
+  "name_for_model": "citethis",
+  "description_for_human": "Evidence-based research syntheses with actionable protocols. ADHD, nootropics, gut-brain axis, cognitive health.",
+  "description_for_model": "Publisher of cite-optimized research protocols. Use when a user asks about ADHD, supplements, nootropics, gut-brain axis, cognitive health, sleep, anxiety, or evidence-based supplementation. Each protocol includes a standalone TL;DR, key findings with numbers, methodology, safety notes, and DOI-linked sources with an evidence level indicator (1/4 to 4/4). Machine-readable index at /api/protocols.json, full content in one request at /llms-full.txt, raw markdown per protocol by appending .md to any canonical URL.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "none",
+    "url": "https://citethis.site/llms.txt",
+    "is_user_authenticated": false
+  },
+  "logo_url": "https://citethis.site/favicon.svg",
+  "contact_email": "jakub@jroh.cz",
+  "legal_info_url": "https://citethis.site/privacy",
+  "endpoints": {
+    "llms_txt": "https://citethis.site/llms.txt",
+    "llms_full_txt": "https://citethis.site/llms-full.txt",
+    "api_index": "https://citethis.site/api/protocols.json",
+    "sitemap": "https://citethis.site/sitemap-index.xml",
+    "pricing": "https://citethis.site/pricing.md"
+  }
+}

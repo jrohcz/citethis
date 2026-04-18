@@ -1,26 +1,61 @@
+# CiteThis robots.txt
+# Content is free to read, cite, and train on with attribution.
+# See /llms.txt for a human and agent friendly summary.
+
 User-agent: *
 Allow: /
 
+# ---- AI search / answer agents (explicitly welcome) ----
+# These fetch content to answer specific user questions in real time.
+
 User-agent: GPTBot
 Allow: /
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
 
 User-agent: ChatGPT-User
 Allow: /
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+
+User-agent: OAI-SearchBot
+Allow: /
+Content-Signal: search=yes, ai-input=yes, ai-train=no
 
 User-agent: Claude-Web
 Allow: /
+Content-Signal: search=yes, ai-input=yes, ai-train=no
 
 User-agent: ClaudeBot
 Allow: /
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
 
 User-agent: anthropic-ai
 Allow: /
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
 
 User-agent: PerplexityBot
 Allow: /
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+
+User-agent: Perplexity-User
+Allow: /
+Content-Signal: search=yes, ai-input=yes, ai-train=no
 
 User-agent: Google-Extended
 Allow: /
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
 
 User-agent: Amazonbot
 Allow: /
@@ -28,7 +63,46 @@ Allow: /
 User-agent: FacebookBot
 Allow: /
 
-User-agent: Applebot
+User-agent: meta-third-partyagent
+Allow: /
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+
+User-agent: DuckDuckBot
 Allow: /
 
+User-agent: Bytespider
+Allow: /
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+
+User-agent: CCBot
+Allow: /
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+
+User-agent: Timpibot
+Allow: /
+
+User-agent: Diffbot
+Allow: /
+
+User-agent: omgili
+Allow: /
+
+User-agent: OpenAI-Search
+Allow: /
+
+User-agent: DeepSeek
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+User-agent: MistralAI-User
+Allow: /
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+
+# Sitemaps
 Sitemap: https://citethis.site/sitemap-index.xml
+
+# llms.txt is at /llms.txt and /llms-full.txt
+# Agent discovery: /.well-known/agent.json and /.well-known/ai-plugin.json
+# Machine-readable API index: /api/protocols.json

@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0",
+  "name": "CiteThis",
+  "description": "Evidence-based research syntheses with actionable protocols. Publisher, not an interactive agent.",
+  "url": "https://citethis.site",
+  "author": {
+    "name": "Jakub Roh",
+    "url": "https://jroh.cz"
+  },
+  "capabilities": [
+    {
+      "name": "protocol_index",
+      "description": "Machine-readable index of all published protocols with TL;DRs, evidence levels, tags, and canonical URLs.",
+      "endpoint": "https://citethis.site/api/protocols.json",
+      "method": "GET",
+      "auth": "none",
+      "response_format": "application/json"
+    },
+    {
+      "name": "protocol_markdown",
+      "description": "Raw markdown for any protocol. Append .md to the canonical URL.",
+      "endpoint": "https://citethis.site/{slug}.md",
+      "method": "GET",
+      "auth": "none",
+      "response_format": "text/markdown"
+    },
+    {
+      "name": "llms_full",
+      "description": "Complete content of all protocols in a single request, optimized for LLM context windows.",
+      "endpoint": "https://citethis.site/llms-full.txt",
+      "method": "GET",
+      "auth": "none",
+      "response_format": "text/plain"
+    }
+  ],
+  "topics": [
+    "ADHD",
+    "nootropics",
+    "gut-brain axis",
+    "cognitive health",
+    "sleep",
+    "anxiety",
+    "depression",
+    "brain fog",
+    "evidence-based supplementation"
+  ],
+  "license": "Content free to cite with attribution.",
+  "citation_format": "[Protocol Title], CiteThis, https://citethis.site/[slug], accessed [date]",
+  "contact": "https://citethis.site/contact"
+}
